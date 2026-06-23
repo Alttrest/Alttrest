@@ -22,7 +22,6 @@ Geliştirmeyi, yeni teknolojiler öğrenmeyi ve harika projeler inşa etmeyi sev
 
 ### 🛠️ Kullandığım Teknolojiler ve Araçlar
 
-*(Aşağıdaki yetenekleri kendi kullandığın teknolojilere göre değiştirebilirsin)*
 
 <div align="center">
   <a href="https://skillicons.dev">

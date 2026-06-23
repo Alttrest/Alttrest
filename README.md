@@ -14,20 +14,21 @@ Geliştirmeyi, yeni teknolojiler öğrenmeyi ve harika projeler inşa etmeyi sev
 ### 👨‍💻 Hakkımda Kısaca
 
 - 🔭 Şu anda kişisel projelerim ve **[Portfolyom](https://alttre-portfolio.vercel.app/)** üzerinde çalışıyorum.
-- 🌱 Her gün yeni bir şeyler öğrenmeye ve kendimi geliştirmeye devam ediyorum.
-- 💬 Bana web geliştirme, açık kaynak projeler veya teknoloji hakkında her şeyi sorabilirsin.
+- 🌱 Yapay zeka ajan mimarileri (ReAct) ve donanım/elektronik sistemler üzerine yoğunlaşıyorum.
+- 💬 Bana AI ajanları, donanım projeleri veya Linux/Hyprland kurulumları hakkında her şeyi sorabilirsin.
 - 📫 Bana ulaşmak için: [Portfolyo sitem](https://alttre-portfolio.vercel.app/) üzerinden iletişime geçebilirsin.
 
 ---
 
-### 🛠️ Kullandığım Teknolojiler ve Araçlar
+### 🛠️ Yetenekler & Uzmanlık Alanları
 
-
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,tailwind,nodejs,git,github,vscode" alt="Alttrest Tech Stack"/>
-  </a>
-</div>
+| Kategori | Teknolojiler |
+| :--- | :--- |
+| **Diller** | <img align="center" src="https://skillicons.dev/icons?i=python,cpp,js,html,css,bash" alt="Diller"/> |
+| **Framework & Kütüphaneler** | <img align="center" src="https://skillicons.dev/icons?i=flask" alt="Flask"/> <br/> `Socket.io`, `WebSockets`, `Playwright` |
+| **Yapay Zeka & LLM** | `LLM API (Gemini, Qwen, Llama, Claude)` <br/> `Prompt Mühendisliği`, `ReAct Ajan Mimarileri`, `Claude Code`, `Antigravity` |
+| **Donanım & Elektronik** | <img align="center" src="https://skillicons.dev/icons?i=arduino" alt="Arduino"/> <br/> `Devre Tasarımı`, `Lehimleme`, `Li-Po & Type-C` |
+| **Sistem & Araçlar** | <img align="center" src="https://skillicons.dev/icons?i=linux,docker,git,github" alt="Sistem"/> <br/> `Hyprland` |
 
 ---
 

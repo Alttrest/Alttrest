@@ -1,52 +1,91 @@
-# Merhaba, Ben Ali! 👋
+<!-- 
+===================================================================
+⚡ PREMIUM GITHUB PROFILE README - ALTTREST (ALİ)
+===================================================================
+-->
 
 <div align="center">
+  <!-- Dynamic Dark / Light Animated Hero Banner -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="light.svg">
+    <img alt="Ali (Alttrest) Hero Banner" src="dark.svg" width="100%">
+  </picture>
+</div>
+
+<br/>
+
+<div align="center">
+  <!-- Quick Link Badges -->
   <a href="https://alttre-portfolio.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolyomu%20Ziyaret%20Et-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio Badge"/>
+    <img src="https://img.shields.io/badge/🌐%20Portfolyomu%20Ziyaret%20Et-7C3AED?style=for-the-badge&logoColor=white" alt="Portfolio Badge"/>
   </a>
-  <img src="https://komarev.com/ghpvc/?username=Alttrest&color=blue&style=for-the-badge&label=Profil+Ziyareti" alt="Profile Views" />
+  <a href="https://github.com/Alttrest" target="_blank">
+    <img src="https://komarev.com/ghpvc/?username=Alttrest&color=22D3EE&style=for-the-badge&label=Profil+Ziyareti" alt="Profile Views" />
+  </a>
+  <a href="https://github.com/Alttrest?tab=followers" target="_blank">
+    <img src="https://img.shields.io/github/followers/Alttrest?style=for-the-badge&color=10B981&label=Takipçi" alt="Followers" />
+  </a>
 </div>
 
 <br/>
 
-Geliştirmeyi, yeni teknolojiler öğrenmeyi ve harika projeler inşa etmeyi seven bir geliştiriciyim. Kişisel web sitemi ve projelerimi incelemek istersen [Portfolyoma göz atabilirsin](https://alttre-portfolio.vercel.app/).
+---
 
-### 👨‍💻 Hakkımda Kısaca
+### 👨‍💻 Hakkımda | About Me
 
-- 🔭 Şu anda kişisel projelerim ve **[Portfolyom](https://alttre-portfolio.vercel.app/)** üzerinde çalışıyorum.
-- 🌱 Yapay zeka ajan mimarileri (ReAct) ve donanım/elektronik sistemler üzerine yoğunlaşıyorum.
-- 💬 Bana AI ajanları, donanım projeleri veya Linux/Hyprland kurulumları hakkında her şeyi sorabilirsin.
-- 📫 Bana ulaşmak için: [Portfolyo sitem](https://alttre-portfolio.vercel.app/) üzerinden iletişime geçebilirsin.
+Geliştirmeyi, yeni teknolojileri keşfetmeyi ve yapay zeka ile donanım sistemlerini bir araya getiren yenilikçi projeler inşa etmeyi seven bir **Yapay Zeka & Sistem Geliştiricisiyim**.
+
+- 🔭 **Şu Anda:** Kişisel projelerim ve **[Portfolyo Web Sitem](https://alttre-portfolio.vercel.app/)** üzerinde çalışıyorum.
+- 🌱 **Odak Alanlarım:** Yapay zeka ajan mimarileri (**ReAct / LLM Agents**), donanım/elektronik devre tasarımları ve **Linux (Hyprland)** özelleştirmeleri.
+- 💬 **Danışabileceğin Konular:** ReAct Ajan Mimarileri, Claude Code & Antigravity yetenekleri, Gömülü Sistemler (Arduino / Li-Po / Type-C) ve Linux ortamlarda verimlilik.
+- 📫 **İletişim:** [Portfolyo sitem](https://alttre-portfolio.vercel.app/) üzerinden bana kolayca ulaşabilirsin.
 
 ---
 
-### 🛠️ Yetenekler & Uzmanlık Alanları
+### 🛠️ Teknolojiler & Uzmanlık Alanları | Tech Stack
 
-| Kategori | Teknolojiler |
+<div align="center">
+
+| Kategori | Teknolojiler & Araçlar |
 | :--- | :--- |
-| **Diller** | <img align="center" src="https://skillicons.dev/icons?i=python,cpp,js,html,css,bash" alt="Diller"/> |
-| **Framework & Kütüphaneler** | <img align="center" src="https://skillicons.dev/icons?i=flask" alt="Flask"/> <br/> `Socket.io`, `WebSockets`, `Playwright` |
-| **Yapay Zeka & LLM** | `LLM API (Gemini, Qwen, Llama, Claude)` <br/> `Prompt Mühendisliği`, `ReAct Ajan Mimarileri`, `Claude Code`, `Antigravity` |
-| **Donanım & Elektronik** | <img align="center" src="https://skillicons.dev/icons?i=arduino" alt="Arduino"/> <br/> `Devre Tasarımı`, `Lehimleme`, `Li-Po & Type-C` |
-| **Sistem & Araçlar** | <img align="center" src="https://skillicons.dev/icons?i=linux,docker,git,github" alt="Sistem"/> <br/> `Hyprland` |
+| **Yazılım Dilleri** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,cpp,js,html,css,bash" alt="Languages"/></a> |
+| **Framework & Web** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=flask" alt="Flask"/></a> <br/> `Socket.io` • `WebSockets` • `Playwright` |
+| **Yapay Zeka & LLM** | `Gemini API` • `Qwen` • `Llama` • `Claude Code` • `ReAct Ajan Mimarileri` • `Antigravity` • `Prompt Engineering` |
+| **Donanım & Elektronik** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=arduino" alt="Arduino"/></a> <br/> `Devre Tasarımı` • `Lehimleme & Montaj` • `Li-Po & Type-C Güç Yönetimi` |
+| **Sistem & Araçlar** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,docker,git,github" alt="Systems"/></a> <br/> `Hyprland Desktop Environment` |
+
+</div>
 
 ---
 
-### 📊 GitHub İstatistiklerim
+### 📊 GitHub İstatistikleri & Aktiflik | GitHub Stats
+
+<br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Alttrest&theme=react-dark&bg_color=0d1117&hide_border=true" width="100%" alt="Alttrest Activity Graph"/>
+  <!-- GitHub Activity Graph -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Alttrest&theme=react-dark&bg_color=030712&hide_border=true&color=22D3EE&line=7C3AED&point=10B981" width="100%" alt="Alttrest Activity Graph"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Alttrest&show_icons=true&theme=radical&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alttrest&layout=compact&theme=radical&hide_border=true" width="48%" />
+  <!-- General Stats Card -->
+  <img src="https://github-readme-stats.vercel.app/api?username=Alttrest&show_icons=true&theme=radical&bg_color=0F172A&title_color=22D3EE&icon_color=7C3AED&text_color=94A3B8&border_radius=12&hide_border=true" width="48%" alt="GitHub Stats" />
+  <!-- Most Used Languages Card -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alttrest&layout=compact&theme=radical&bg_color=0F172A&title_color=22D3EE&text_color=94A3B8&border_radius=12&hide_border=true" width="48%" alt="Top Languages" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Alttrest&theme=radical&hide_border=true" width="100%" />
+  <!-- Streak Stats Card -->
+  <img src="https://streak-stats.demolab.com/?user=Alttrest&theme=radical&background=0F172A&ring=7C3AED&fire=22D3EE&currStreakLabel=10B981&border_radius=12&hide_border=true" width="100%" alt="GitHub Streak Stats" />
+</div>
+
+---
+
+<div align="center">
+  <p font-size="12px" color="#94A3B8">✨ Built with Pure SVG, Dynamic Animations &amp; Antigravity Agent Engine</p>
 </div>

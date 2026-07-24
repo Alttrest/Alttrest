@@ -1,51 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1800" width="1180" height="1800">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1920" width="1180" height="1920">
   <defs>
     <style>
-      @keyframes floatAscii { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
-      @keyframes scanline { 0%{transform:translateY(0);opacity:.15} 50%{opacity:.5} 100%{transform:translateY(420px);opacity:.15} }
-      @keyframes cursorBlink { 0%,100%{opacity:1} 50%{opacity:0} }
-      @keyframes lineReveal { 0%{opacity:0;transform:translateX(-8px)} 100%{opacity:1;transform:translateX(0)} }
-      @keyframes cardFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+      @keyframes floatAscii{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+      @keyframes scanline{0%{transform:translateY(0);opacity:.15}50%{opacity:.5}100%{transform:translateY(380px);opacity:.15}}
+      @keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
+      @keyframes lineReveal{0%{opacity:0;transform:translateX(-8px)}100%{opacity:1;transform:translateX(0)}}
+      @keyframes cardFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+      @keyframes barGrow{0%{width:0}100%{}}
+      @keyframes countUp{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
+      @keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
       .cursor{animation:cursorBlink .85s infinite}
       .ascii-float{animation:floatAscii 6s ease-in-out infinite}
       .scanbar{animation:scanline 4.5s linear infinite}
-      .pill:hover{transform:translateY(-2px) scale(1.05);filter:drop-shadow(0 0 10px rgba(34,211,238,.6))}
       .al1{animation:lineReveal .35s ease forwards .05s;opacity:0}
       .al2{animation:lineReveal .35s ease forwards .1s;opacity:0}
       .al3{animation:lineReveal .35s ease forwards .15s;opacity:0}
       .al4{animation:lineReveal .35s ease forwards .2s;opacity:0}
-      .al5{animation:lineReveal .35s ease forwards .25s;opacity:0}
-      .al6{animation:lineReveal .35s ease forwards .3s;opacity:0}
-      .al7{animation:lineReveal .35s ease forwards .35s;opacity:0}
-      .al8{animation:lineReveal .35s ease forwards .4s;opacity:0}
-      .al9{animation:lineReveal .35s ease forwards .45s;opacity:0}
-      .al10{animation:lineReveal .35s ease forwards .5s;opacity:0}
-      .al11{animation:lineReveal .35s ease forwards .55s;opacity:0}
-      .al12{animation:lineReveal .35s ease forwards .6s;opacity:0}
-      .al13{animation:lineReveal .35s ease forwards .65s;opacity:0}
-      .al14{animation:lineReveal .35s ease forwards .7s;opacity:0}
-      .al15{animation:lineReveal .35s ease forwards .75s;opacity:0}
-      .al16{animation:lineReveal .35s ease forwards .8s;opacity:0}
-      .al17{animation:lineReveal .35s ease forwards .85s;opacity:0}
-      .al18{animation:lineReveal .35s ease forwards .9s;opacity:0}
-      .al19{animation:lineReveal .35s ease forwards .95s;opacity:0}
-      .al20{animation:lineReveal .35s ease forwards 1s;opacity:0}
+      .al5{animation:lineReveal .35s ease forwards .2s;opacity:0}
+      .al6{animation:lineReveal .35s ease forwards .25s;opacity:0}
+      .al7{animation:lineReveal .35s ease forwards .3s;opacity:0}
+      .al8{animation:lineReveal .35s ease forwards .35s;opacity:0}
+      .al9{animation:lineReveal .35s ease forwards .4s;opacity:0}
+      .al10{animation:lineReveal .35s ease forwards .45s;opacity:0}
+      .al11{animation:lineReveal .35s ease forwards .5s;opacity:0}
+      .al12{animation:lineReveal .35s ease forwards .55s;opacity:0}
+      .al13{animation:lineReveal .35s ease forwards .6s;opacity:0}
+      .al14{animation:lineReveal .35s ease forwards .65s;opacity:0}
+      .al15{animation:lineReveal .35s ease forwards .7s;opacity:0}
+      .al16{animation:lineReveal .35s ease forwards .75s;opacity:0}
+      .al17{animation:lineReveal .35s ease forwards .8s;opacity:0}
+      .al18{animation:lineReveal .35s ease forwards .85s;opacity:0}
       .af1{animation:lineReveal .4s ease forwards .2s;opacity:0}
-      .af2{animation:lineReveal .4s ease forwards .35s;opacity:0}
-      .af3{animation:lineReveal .4s ease forwards .5s;opacity:0}
-      .af4{animation:lineReveal .4s ease forwards .65s;opacity:0}
-      .af5{animation:lineReveal .4s ease forwards .8s;opacity:0}
-      .af6{animation:lineReveal .4s ease forwards .95s;opacity:0}
-      .af7{animation:lineReveal .4s ease forwards 1.1s;opacity:0}
-      .af8{animation:lineReveal .4s ease forwards 1.25s;opacity:0}
-      .af9{animation:lineReveal .4s ease forwards 1.4s;opacity:0}
-      .af10{animation:lineReveal .4s ease forwards 1.55s;opacity:0}
+      .af2{animation:lineReveal .4s ease forwards .4s;opacity:0}
+      .af3{animation:lineReveal .4s ease forwards .6s;opacity:0}
+      .af4{animation:lineReveal .4s ease forwards .8s;opacity:0}
+      .af5{animation:lineReveal .4s ease forwards 1s;opacity:0}
       .cf1{animation:cardFloat 5s ease-in-out infinite}
-      .cf2{animation:cardFloat 5.5s ease-in-out infinite .3s}
-      .cf3{animation:cardFloat 6s ease-in-out infinite .6s}
+      .cf2{animation:cardFloat 5.5s ease-in-out infinite .4s}
+      .cf3{animation:cardFloat 6s ease-in-out infinite .8s}
     </style>
 
-    <!-- Gradients -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#030712"/><stop offset="50%" stop-color="#0B0F19"/><stop offset="100%" stop-color="#030712"/>
     </linearGradient>
@@ -59,429 +53,447 @@
     </linearGradient>
     <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#22D3EE"><animate attributeName="stop-color" values="#22D3EE;#7C3AED;#10B981;#22D3EE" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="50%" stop-color="#818CF8"><animate attributeName="stop-color" values="#818CF8;#EC4899;#38BDF8;#818CF8" dur="8s" repeatCount="indefinite"/></stop>
       <stop offset="100%" stop-color="#C084FC"><animate attributeName="stop-color" values="#C084FC;#22D3EE;#7C3AED;#C084FC" dur="8s" repeatCount="indefinite"/></stop>
     </linearGradient>
     <linearGradient id="pillBdr" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".6"/><stop offset="50%" stop-color="#22D3EE" stop-opacity=".8"/><stop offset="100%" stop-color="#10B981" stop-opacity=".6"/>
-    </linearGradient>
-    <linearGradient id="cardBdr1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".5"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#7C3AED" dur="6s" repeatCount="indefinite"/></stop>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity=".3"><animate attributeName="stop-color" values="#22D3EE;#10B981;#22D3EE" dur="6s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-    <linearGradient id="cardBdr2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity=".5"><animate attributeName="stop-color" values="#10B981;#38BDF8;#10B981" dur="7s" repeatCount="indefinite"/></stop>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity=".3"><animate attributeName="stop-color" values="#38BDF8;#7C3AED;#38BDF8" dur="7s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-    <linearGradient id="cardBdr3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EC4899" stop-opacity=".5"><animate attributeName="stop-color" values="#EC4899;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity=".3"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#7C3AED" dur="8s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-    <linearGradient id="heatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0F172A"/><stop offset="25%" stop-color="#064E3B"/><stop offset="50%" stop-color="#059669"/><stop offset="75%" stop-color="#34D399"/><stop offset="100%" stop-color="#10B981"/>
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".6"/><stop offset="100%" stop-color="#22D3EE" stop-opacity=".6"/>
     </linearGradient>
     <linearGradient id="sectionTitle" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#22D3EE"/><stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
+    <linearGradient id="cardBdr1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".5"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#7C3AED" dur="6s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="cardBdr2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity=".5"><animate attributeName="stop-color" values="#10B981;#38BDF8;#10B981" dur="7s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="cardBdr3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity=".5"><animate attributeName="stop-color" values="#EC4899;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="viewBadge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
 
-    <!-- Radials -->
-    <radialGradient id="orbP" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7C3AED" stop-opacity=".25"/><stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/></radialGradient>
-    <radialGradient id="orbC" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#06B6D4" stop-opacity=".2"/><stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/></radialGradient>
-    <radialGradient id="orbE" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#10B981" stop-opacity=".18"/><stop offset="100%" stop-color="#10B981" stop-opacity="0"/></radialGradient>
-    <radialGradient id="scanGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#22D3EE" stop-opacity=".4"/><stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbP" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7C3AED" stop-opacity=".2"/><stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbC" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#06B6D4" stop-opacity=".15"/><stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbE" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#10B981" stop-opacity=".12"/><stop offset="100%" stop-color="#10B981" stop-opacity="0"/></radialGradient>
 
-    <!-- Filters -->
-    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="4" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
     <filter id="winShadow" x="-5%" y="-3%" width="110%" height="106%"><feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000" flood-opacity=".7"/></filter>
     <filter id="cardGlow" x="-8%" y="-8%" width="116%" height="116%"><feGaussianBlur stdDeviation="6" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
 
-    <!-- Patterns -->
-    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#94A3B8" fill-opacity=".06"/></pattern>
-
-    <clipPath id="asciiClip"><rect x="20" y="68" width="445" height="430"/></clipPath>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".8" fill="#94A3B8" fill-opacity=".05"/></pattern>
+    <clipPath id="winClip"><rect x="20" y="20" width="1140" height="1880" rx="28"/></clipPath>
   </defs>
 
-  <!-- ═══════ CANVAS BG ═══════ -->
-  <rect width="1180" height="1800" fill="url(#bg)"/>
-
-  <!-- Animated Orbs -->
+  <!-- ══════════════ CANVAS ══════════════ -->
+  <rect width="1180" height="1920" fill="url(#bg)"/>
   <circle cx="180" cy="200" r="350" fill="url(#orbP)"><animateTransform attributeName="transform" type="translate" values="0,0;40,50;-20,80;0,0" dur="20s" repeatCount="indefinite"/></circle>
   <circle cx="1000" cy="600" r="400" fill="url(#orbC)"><animateTransform attributeName="transform" type="translate" values="0,0;-50,-60;30,-30;0,0" dur="24s" repeatCount="indefinite"/></circle>
-  <circle cx="590" cy="1200" r="380" fill="url(#orbE)"><animateTransform attributeName="transform" type="translate" values="0,0;35,-40;-40,30;0,0" dur="28s" repeatCount="indefinite"/></circle>
-  <circle cx="300" cy="1500" r="300" fill="url(#orbP)"><animateTransform attributeName="transform" type="translate" values="0,0;-30,40;50,-20;0,0" dur="22s" repeatCount="indefinite"/></circle>
-
-  <!-- Dot Grid -->
-  <rect width="1180" height="1800" fill="url(#dots)"/>
+  <circle cx="590" cy="1300" r="380" fill="url(#orbE)"><animateTransform attributeName="transform" type="translate" values="0,0;35,-40;-40,30;0,0" dur="28s" repeatCount="indefinite"/></circle>
+  <rect width="1180" height="1920" fill="url(#dots)"/>
 
   <!-- Particles -->
-  <circle cx="100" cy="500" r="2" fill="#22D3EE" opacity=".5"><animate attributeName="cy" values="500;420;500" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.8;.2" dur="7s" repeatCount="indefinite"/></circle>
-  <circle cx="350" cy="900" r="1.5" fill="#A855F7" opacity=".4"><animate attributeName="cy" values="900;820;900" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.7;.2" dur="9s" repeatCount="indefinite"/></circle>
-  <circle cx="800" cy="300" r="2" fill="#10B981" opacity=".4"><animate attributeName="cy" values="300;230;300" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".1;.7;.1" dur="8s" repeatCount="indefinite"/></circle>
-  <circle cx="1060" cy="1100" r="2.5" fill="#38BDF8" opacity=".5"><animate attributeName="cy" values="1100;1020;1100" dur="10s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.8;.2" dur="10s" repeatCount="indefinite"/></circle>
-  <circle cx="200" cy="1400" r="1.8" fill="#C084FC" opacity=".4"><animate attributeName="cy" values="1400;1330;1400" dur="11s" repeatCount="indefinite"/><animate attributeName="opacity" values=".15;.6;.15" dur="11s" repeatCount="indefinite"/></circle>
+  <circle cx="100" cy="500" r="2" fill="#22D3EE" opacity=".4"><animate attributeName="cy" values="500;430;500" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.7;.2" dur="7s" repeatCount="indefinite"/></circle>
+  <circle cx="800" cy="300" r="2" fill="#10B981" opacity=".3"><animate attributeName="cy" values="300;240;300" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".1;.6;.1" dur="8s" repeatCount="indefinite"/></circle>
+  <circle cx="1060" cy="1100" r="2.5" fill="#38BDF8" opacity=".4"><animate attributeName="cy" values="1100;1030;1100" dur="10s" repeatCount="indefinite"/><animate attributeName="opacity" values=".15;.7;.15" dur="10s" repeatCount="indefinite"/></circle>
 
-  <!-- ═══════ APPLICATION WINDOW ═══════ -->
+  <!-- ══════════════ WINDOW ══════════════ -->
   <g filter="url(#winShadow)">
-    <rect x="20" y="20" width="1140" height="1760" rx="28" fill="#0F172A" fill-opacity=".88" stroke="url(#shimmer)" stroke-width="1.5"/>
-    <rect x="21" y="21" width="1138" height="1758" rx="27" fill="none" stroke="#FFF" stroke-opacity=".04" stroke-width="1"/>
+    <rect x="20" y="20" width="1140" height="1880" rx="28" fill="#0F172A" fill-opacity=".88" stroke="url(#shimmer)" stroke-width="1.5"/>
+    <rect x="21" y="21" width="1138" height="1878" rx="27" fill="none" stroke="#FFF" stroke-opacity=".04"/>
 
-    <!-- ═══ TITLE BAR ═══ -->
-    <path d="M20 48A28 28 0 0148 20h1084a28 28 0 0128 28v20H20Z" fill="#030712" fill-opacity=".8"/>
+    <!-- ── TITLE BAR (y20-68) ── -->
+    <rect x="20" y="20" width="1140" height="48" rx="28" fill="#030712" fill-opacity=".8"/>
+    <rect x="20" y="44" width="1140" height="24" fill="#030712" fill-opacity=".8"/>
     <line x1="20" y1="68" x2="1160" y2="68" stroke="#FFF" stroke-opacity=".08"/>
     <circle cx="48" cy="44" r="5.5" fill="#EF4444" opacity=".85"/>
     <circle cx="66" cy="44" r="5.5" fill="#F59E0B" opacity=".85"/>
     <circle cx="84" cy="44" r="5.5" fill="#10B981" opacity=".85"/>
-    <text x="590" y="48" fill="#94A3B8" font-family="Consolas,'Fira Code',monospace" font-size="12" letter-spacing="2" text-anchor="middle" font-weight="600" opacity=".9">ALI TERMINAL</text>
-    <rect x="1040" y="35" width="90" height="18" rx="9" fill="#10B981" fill-opacity=".15" stroke="#10B981" stroke-opacity=".4"/>
-    <circle cx="1052" cy="44" r="3" fill="#10B981"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle>
-    <text x="1062" y="47" fill="#34D399" font-family="system-ui,sans-serif" font-size="10" font-weight="700" letter-spacing=".5">ONLINE</text>
+    <text x="590" y="48" fill="#94A3B8" font-family="'Consolas','Courier New',monospace" font-size="12" letter-spacing="2" text-anchor="middle" font-weight="600">ALI TERMINAL v3.2</text>
+    <rect x="1020" y="32" width="110" height="22" rx="11" fill="#10B981" fill-opacity=".12" stroke="#10B981" stroke-opacity=".4"/>
+    <circle cx="1034" cy="43" r="3" fill="#10B981"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="1044" y="47" fill="#34D399" font-family="system-ui,sans-serif" font-size="10" font-weight="700" letter-spacing=".5">CONNECTED</text>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- HEADER: ASCII LEFT + PROFILE RIGHT (y=68..500) -->
-    <!-- ═══════════════════════════════════════════ -->
-    <line x1="465" y1="68" x2="465" y2="500" stroke="#FFF" stroke-opacity=".05"/>
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- SECTION 1: HEADER  (y68 - y490)                  -->
+    <!-- Left: ASCII    Right: Name + Info                 -->
+    <!-- ══════════════════════════════════════════════════ -->
 
-    <!-- ASCII Portrait -->
+    <!-- Vertical divider -->
+    <line x1="465" y1="78" x2="465" y2="480" stroke="#FFF" stroke-opacity=".04"/>
+
+    <!-- ── ASCII Portrait (Left) ── -->
     <g class="ascii-float">
-      <g fill="url(#asciiGrad)" font-family="Consolas,'JetBrains Mono',monospace" font-size="10.5" font-weight="600" letter-spacing="1.2">
-        <text x="50" y="110" class="al1">      .----------------------------------------.</text>
-        <text x="50" y="125" class="al2">     /   ____________________________________   \</text>
-        <text x="50" y="140" class="al3">    |   /  .-.                           .-.  \   |</text>
-        <text x="50" y="155" class="al4">    |  |  ( o )  .--------------------. ( o ) |  |</text>
-        <text x="50" y="170" class="al5">    |  |   `-'  / ALTTREST_CORE_v3.2  \ `-'  |  |</text>
-        <text x="50" y="185" class="al6">    |  |       |                       |     |  |</text>
-        <text x="50" y="200" class="al7">    |  |       |   /\_/\  [AI_AGENT]  |     |  |</text>
-        <text x="50" y="215" class="al8">    |  |       |  ( o.o )  REACT_LLM  |     |  |</text>
-        <text x="50" y="230" class="al9">    |  |       |   &gt; ^ &lt;   READY      |     |  |</text>
-        <text x="50" y="245" class="al10">    |  |       \                       /     |  |</text>
-        <text x="50" y="260" class="al11">    |  |        '---------------------'      |  |</text>
-        <text x="50" y="275" class="al12">    |  |  ______                      ______  |  |</text>
-        <text x="50" y="290" class="al13">    |  | [======]                    [======] |  |</text>
-        <text x="50" y="305" class="al14">    |  | | || |   .--------------.  | || | |  |</text>
-        <text x="50" y="320" class="al15">    |  | | || |  | ___     ___  |  | || | |  |</text>
-        <text x="50" y="335" class="al16">    |  | |_||_|  |/ _ \   / _ \ |  |_||_| |  |</text>
-        <text x="50" y="350" class="al17">    |  |         || / \| | / \| |          |  |</text>
-        <text x="50" y="365" class="al18">    |  |         | \_/   \_/  |          |  |</text>
-        <text x="50" y="380" class="al19">    |  |          '-----------'           |  |</text>
-        <text x="50" y="395" class="al20">    |   \__________________________________/   |</text>
+      <g fill="url(#asciiGrad)" font-family="'Consolas','Courier New',monospace" font-size="10" font-weight="600" letter-spacing="1">
+        <text x="52" y="108" class="al1">    .--------------------------------------.</text>
+        <text x="52" y="122" class="al2">   /  ____________________________________  \</text>
+        <text x="52" y="136" class="al3">  |  /  .-.                          .-.  \  |</text>
+        <text x="52" y="150" class="al4">  | |  ( o )  .------------------. ( o )  | |</text>
+        <text x="52" y="164" class="al5">  | |   '-'  / ALTTREST_CORE_3.2 \  '-'  | |</text>
+        <text x="52" y="178" class="al6">  | |       |                     |      | |</text>
+        <text x="52" y="192" class="al7">  | |       |  /\_/\  [AI_AGENT] |      | |</text>
+        <text x="52" y="206" class="al8">  | |       | ( o.o )  REACT_LLM |      | |</text>
+        <text x="52" y="220" class="al9">  | |       |  &gt; ^ &lt;   READY     |      | |</text>
+        <text x="52" y="234" class="al10">  | |       \                     /      | |</text>
+        <text x="52" y="248" class="al11">  | |        '-------------------'       | |</text>
+        <text x="52" y="262" class="al12">  | |  ______                    ______  | |</text>
+        <text x="52" y="276" class="al13">  | | [======]                  [======] | |</text>
+        <text x="52" y="290" class="al14">  | | | || |  .-------------.   | || |  | |</text>
+        <text x="52" y="304" class="al15">  | | | || | | ___    ___  |   | || |  | |</text>
+        <text x="52" y="318" class="al16">  | | |_||_| |/ _ \  / _ \ |   |_||_|  | |</text>
+        <text x="52" y="332" class="al17">  | |        || / \| | / \||           | |</text>
+        <text x="52" y="346" class="al18">  |  \________________________________/   |</text>
       </g>
     </g>
 
-    <!-- Scanline over ASCII -->
-    <g transform="translate(20,68)" clip-path="url(#asciiClip)">
-      <rect class="scanbar" x="0" y="0" width="445" height="2" fill="url(#scanGlow)"/>
+    <!-- Scanline -->
+    <g clip-path="url(#winClip)">
+      <rect class="scanbar" x="22" y="68" width="440" height="2" fill="#22D3EE" fill-opacity=".15"/>
     </g>
 
-    <!-- Terminal Status Footer (Left Bottom) -->
-    <rect x="45" y="420" width="395" height="65" rx="10" fill="#030712" fill-opacity=".6" stroke="#FFF" stroke-opacity=".05"/>
-    <text x="62" y="443" fill="#94A3B8" font-family="Consolas,monospace" font-size="10.5">&gt; STATUS: <tspan fill="#10B981">BUILDING AI AGENTS</tspan></text>
-    <text x="62" y="461" fill="#94A3B8" font-family="Consolas,monospace" font-size="10.5">&gt; ARCH: <tspan fill="#38BDF8">REACT LLM &amp; EMBEDDED</tspan></text>
-    <text x="62" y="479" fill="#94A3B8" font-family="Consolas,monospace" font-size="10.5">&gt; OS: <tspan fill="#C084FC">LINUX / HYPRLAND</tspan><tspan class="cursor" fill="#22D3EE"> █</tspan></text>
+    <!-- Terminal Status Box (Left Bottom) -->
+    <rect x="52" y="370" width="395" height="60" rx="10" fill="#030712" fill-opacity=".6" stroke="#FFF" stroke-opacity=".05"/>
+    <text x="68" y="392" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5">&gt; STATUS: <tspan fill="#10B981">BUILDING AI AGENTS</tspan></text>
+    <text x="68" y="408" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5">&gt; ARCH: <tspan fill="#38BDF8">REACT LLM + EMBEDDED</tspan></text>
+    <text x="68" y="424" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5">&gt; UPTIME: <tspan fill="#C084FC">ALWAYS ON</tspan><tspan class="cursor" fill="#22D3EE"> █</tspan></text>
 
-    <!-- RIGHT SIDE: Name & Typing -->
-    <text x="495" y="112" fill="#94A3B8" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="500">Hi 👋, I'm</text>
-    <text x="495" y="152" fill="url(#nameGrad)" font-family="system-ui,-apple-system,sans-serif" font-size="34" font-weight="800" letter-spacing="-.5">Ali Turan</text>
-
-    <text x="495" y="186" fill="#38BDF8" font-family="Consolas,monospace" font-size="13" font-weight="700">$ role --current &gt;</text>
-    <text x="510" y="208" fill="#22D3EE" font-family="Consolas,monospace" font-size="14" font-weight="700">
-      <tspan><animate attributeName="textContent" values="⚡ Full Stack Developer;⚡ AI Agent Developer;⚡ Linux Enthusiast;⚡ Hardware Builder;⚡ Open Source Contributor;⚡ Full Stack Developer" dur="15s" repeatCount="indefinite"/></tspan>
-      <tspan class="cursor" fill="#22D3EE"> █</tspan>
-    </text>
-
-    <line x1="495" y1="228" x2="1125" y2="228" stroke="#FFF" stroke-opacity=".05"/>
-
-    <!-- Profile Info Grid -->
-    <text x="495" y="256" font-family="system-ui,sans-serif" font-size="13"><tspan fill="#818CF8">📍 </tspan><tspan fill="#F8FAFC" font-weight="600">Türkiye</tspan></text>
-    <text x="750" y="256" font-family="system-ui,sans-serif" font-size="13"><tspan fill="#818CF8">🎓 </tspan><tspan fill="#F8FAFC" font-weight="600">Computer Engineering</tspan></text>
-    <text x="495" y="282" font-family="system-ui,sans-serif" font-size="13"><tspan fill="#818CF8">🚀 </tspan><tspan fill="#F8FAFC" font-weight="600">Building AI Agents</tspan></text>
-    <text x="750" y="282" font-family="system-ui,sans-serif" font-size="13"><tspan fill="#818CF8">🐧 </tspan><tspan fill="#F8FAFC" font-weight="600">Linux + Hyprland</tspan></text>
-    <text x="495" y="308" font-family="system-ui,sans-serif" font-size="13"><tspan fill="#818CF8">🌐 </tspan><tspan fill="#38BDF8" font-weight="600">alttre-portfolio.vercel.app</tspan></text>
-    <text x="750" y="308" font-family="system-ui,sans-serif" font-size="13"><tspan fill="#818CF8">✉️ </tspan><tspan fill="#F8FAFC" font-weight="600">Contact via Portfolio</tspan></text>
-
-    <line x1="495" y1="330" x2="1125" y2="330" stroke="#FFF" stroke-opacity=".05"/>
-
-    <!-- Quick Skills Pills in Header -->
-    <g transform="translate(495,340)">
-      <text x="0" y="14" fill="#38BDF8" font-family="Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1.5">// PRIMARY SKILLS</text>
-      <g class="pill" transform="translate(0,24)"><rect width="68" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="34" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Python</text></g>
-      <g class="pill" transform="translate(74,24)"><rect width="60" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="30" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Flask</text></g>
-      <g class="pill" transform="translate(140,24)"><rect width="58" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="29" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">LLMs</text></g>
-      <g class="pill" transform="translate(204,24)"><rect width="74" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="37" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Arduino</text></g>
-      <g class="pill" transform="translate(284,24)"><rect width="62" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="31" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Linux</text></g>
-      <g class="pill" transform="translate(352,24)"><rect width="68" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="34" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Docker</text></g>
-      <g class="pill" transform="translate(426,24)"><rect width="52" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="26" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Git</text></g>
+    <!-- Profile Views Badge (Left Corner) -->
+    <g transform="translate(52,446)">
+      <rect width="180" height="28" rx="14" fill="#0F172A" stroke="url(#viewBadge)" stroke-width="1"/>
+      <circle cx="16" cy="14" r="4" fill="#7C3AED" opacity=".8"><animate attributeName="opacity" values=".5;1;.5" dur="3s" repeatCount="indefinite"/></circle>
+      <text x="28" y="18" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10.5" font-weight="500">Profile Views</text>
+      <text x="120" y="18" fill="#22D3EE" font-family="system-ui,sans-serif" font-size="11.5" font-weight="800">1,247</text>
     </g>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- SECTION: ABOUT (y=500..720) -->
-    <!-- ═══════════════════════════════════════════ -->
-    <line x1="45" y1="510" x2="1135" y2="510" stroke="#FFF" stroke-opacity=".06"/>
-    <text x="590" y="548" fill="url(#sectionTitle)" font-family="Consolas,monospace" font-size="14" font-weight="700" letter-spacing="3" text-anchor="middle">// ABOUT</text>
+    <!-- ── Right Side: Name + Info ── -->
+    <text x="495" y="110" fill="#94A3B8" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="500">Hi 👋, I'm</text>
 
-    <g transform="translate(60,570)">
-      <g class="af1"><text x="0" y="16" font-family="system-ui,sans-serif" font-size="14"><tspan fill="#22D3EE">▸ </tspan><tspan fill="#F8FAFC" font-weight="500">AI Agent Developer — ReAct, LLM Orchestration, Autonomous Systems</tspan></text></g>
-      <g class="af2"><text x="0" y="44" font-family="system-ui,sans-serif" font-size="14"><tspan fill="#22D3EE">▸ </tspan><tspan fill="#F8FAFC" font-weight="500">Python Backend Developer — Flask, Socket.IO, Real-time APIs</tspan></text></g>
-      <g class="af3"><text x="0" y="72" font-family="system-ui,sans-serif" font-size="14"><tspan fill="#22D3EE">▸ </tspan><tspan fill="#F8FAFC" font-weight="500">Linux &amp; Hyprland — Custom Desktop Environment &amp; Dotfiles</tspan></text></g>
-      <g class="af4"><text x="0" y="100" font-family="system-ui,sans-serif" font-size="14"><tspan fill="#22D3EE">▸ </tspan><tspan fill="#F8FAFC" font-weight="500">Embedded Systems — Arduino, ESP32, Circuit Design, Soldering</tspan></text></g>
-      <g class="af5"><text x="0" y="128" font-family="system-ui,sans-serif" font-size="14"><tspan fill="#22D3EE">▸ </tspan><tspan fill="#F8FAFC" font-weight="500">LLM Integrations — Gemini, Claude, Qwen, Llama, Prompt Engineering</tspan></text></g>
+    <text x="495" y="148" fill="url(#nameGrad)" font-family="system-ui,-apple-system,sans-serif" font-size="34" font-weight="800" letter-spacing="-.5">Ali Turan</text>
+
+    <text x="495" y="178" fill="#38BDF8" font-family="'Consolas',monospace" font-size="12" font-weight="700">$ role --current</text>
+    <text x="495" y="200" fill="#22D3EE" font-family="'Consolas',monospace" font-size="14" font-weight="700">Full Stack Developer<tspan class="cursor"> █</tspan></text>
+
+    <line x1="495" y1="218" x2="1130" y2="218" stroke="#FFF" stroke-opacity=".05"/>
+
+    <!-- Profile Info -->
+    <text x="495" y="248" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13" font-weight="600"><tspan fill="#818CF8">📍  </tspan>Türkiye</text>
+    <text x="750" y="248" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13" font-weight="600"><tspan fill="#818CF8">🎓  </tspan>Computer Engineering</text>
+
+    <text x="495" y="274" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13" font-weight="600"><tspan fill="#818CF8">🚀  </tspan>Building AI Agents</text>
+    <text x="750" y="274" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13" font-weight="600"><tspan fill="#818CF8">🐧  </tspan>Linux + Hyprland</text>
+
+    <text x="495" y="300" fill="#38BDF8" font-family="system-ui,sans-serif" font-size="13" font-weight="600"><tspan fill="#818CF8">🌐  </tspan>alttre-portfolio.vercel.app</text>
+    <text x="750" y="300" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13" font-weight="600"><tspan fill="#818CF8">✉️  </tspan>Contact via Portfolio</text>
+
+    <line x1="495" y1="320" x2="1130" y2="320" stroke="#FFF" stroke-opacity=".05"/>
+
+    <!-- Skill Pills -->
+    <text x="495" y="344" fill="#38BDF8" font-family="'Consolas',monospace" font-size="11" font-weight="700" letter-spacing="1">// PRIMARY SKILLS</text>
+    <g transform="translate(495,356)">
+      <rect width="66" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="33" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Python</text>
+    </g>
+    <g transform="translate(567,356)">
+      <rect width="58" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="29" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Flask</text>
+    </g>
+    <g transform="translate(631,356)">
+      <rect width="56" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="28" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">LLMs</text>
+    </g>
+    <g transform="translate(693,356)">
+      <rect width="72" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="36" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Arduino</text>
+    </g>
+    <g transform="translate(771,356)">
+      <rect width="60" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="30" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Linux</text>
+    </g>
+    <g transform="translate(837,356)">
+      <rect width="66" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="33" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Docker</text>
+    </g>
+    <g transform="translate(909,356)">
+      <rect width="50" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="25" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Git</text>
     </g>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- SECTION: TECH STACK (y=720..960) -->
-    <!-- ═══════════════════════════════════════════ -->
-    <line x1="45" y1="730" x2="1135" y2="730" stroke="#FFF" stroke-opacity=".06"/>
-    <text x="590" y="768" fill="url(#sectionTitle)" font-family="Consolas,monospace" font-size="14" font-weight="700" letter-spacing="3" text-anchor="middle">// TECH STACK</text>
-
-    <g transform="translate(60,788)">
-      <!-- Row 1: Languages & Core -->
-      <text x="0" y="14" fill="#94A3B8" font-family="Consolas,monospace" font-size="11" letter-spacing="1">LANGUAGES &amp; CORE</text>
-      <g class="pill" transform="translate(0,24)"><rect width="72" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="36" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Python</text></g>
-      <g class="pill" transform="translate(80,24)"><rect width="56" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="28" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">C++</text></g>
-      <g class="pill" transform="translate(144,24)"><rect width="90" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="45" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">JavaScript</text></g>
-      <g class="pill" transform="translate(242,24)"><rect width="64" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="32" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">HTML</text></g>
-      <g class="pill" transform="translate(314,24)"><rect width="58" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="29" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">CSS</text></g>
-
-      <!-- Row 2: Frameworks & Tools -->
-      <text x="0" y="76" fill="#94A3B8" font-family="Consolas,monospace" font-size="11" letter-spacing="1">FRAMEWORKS &amp; TOOLS</text>
-      <g class="pill" transform="translate(0,86)"><rect width="62" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="31" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Flask</text></g>
-      <g class="pill" transform="translate(70,86)"><rect width="84" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="42" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Socket.IO</text></g>
-      <g class="pill" transform="translate(162,86)"><rect width="94" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="47" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">WebSocket</text></g>
-      <g class="pill" transform="translate(264,86)"><rect width="90" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="45" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Playwright</text></g>
-      <g class="pill" transform="translate(362,86)"><rect width="72" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="36" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Docker</text></g>
-      <g class="pill" transform="translate(442,86)"><rect width="52" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="26" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Git</text></g>
-
-      <!-- Row 3: Systems & Hardware -->
-      <text x="540" y="14" fill="#94A3B8" font-family="Consolas,monospace" font-size="11" letter-spacing="1">SYSTEMS &amp; HARDWARE</text>
-      <g class="pill" transform="translate(540,24)"><rect width="64" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="32" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Linux</text></g>
-      <g class="pill" transform="translate(612,24)"><rect width="84" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="42" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Hyprland</text></g>
-      <g class="pill" transform="translate(704,24)"><rect width="76" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="38" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Arduino</text></g>
-      <g class="pill" transform="translate(788,24)"><rect width="66" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="33" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">ESP32</text></g>
-
-      <!-- Row 4: AI & LLMs -->
-      <text x="540" y="76" fill="#94A3B8" font-family="Consolas,monospace" font-size="11" letter-spacing="1">AI &amp; LLMs</text>
-      <g class="pill" transform="translate(540,86)"><rect width="60" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="30" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">LLMs</text></g>
-      <g class="pill" transform="translate(608,86)"><rect width="72" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="36" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Gemini</text></g>
-      <g class="pill" transform="translate(688,86)"><rect width="70" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="35" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Claude</text></g>
-      <g class="pill" transform="translate(766,86)"><rect width="62" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="31" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Qwen</text></g>
-      <g class="pill" transform="translate(836,86)"><rect width="66" height="26" rx="13" fill="#1E293B" fill-opacity=".9" stroke="url(#pillBdr)" stroke-width="1.2" filter="url(#glow)"/><text x="33" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">ReAct</text></g>
+    <!-- Row 2 pills -->
+    <g transform="translate(495,388)">
+      <rect width="62" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="31" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">React</text>
+    </g>
+    <g transform="translate(563,388)">
+      <rect width="54" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="27" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">C++</text>
+    </g>
+    <g transform="translate(623,388)">
+      <rect width="66" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="33" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">ESP32</text>
+    </g>
+    <g transform="translate(695,388)">
+      <rect width="90" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="45" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Playwright</text>
+    </g>
+    <g transform="translate(791,388)">
+      <rect width="86" height="24" rx="12" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="43" y="16" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Socket.IO</text>
     </g>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- SECTION: PROJECTS (y=960..1210) -->
-    <!-- ═══════════════════════════════════════════ -->
-    <line x1="45" y1="960" x2="1135" y2="960" stroke="#FFF" stroke-opacity=".06"/>
-    <text x="590" y="998" fill="url(#sectionTitle)" font-family="Consolas,monospace" font-size="14" font-weight="700" letter-spacing="3" text-anchor="middle">// PROJECTS</text>
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- SECTION 2: ABOUT  (y500 - y680)                   -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <line x1="45" y1="500" x2="1135" y2="500" stroke="#FFF" stroke-opacity=".06"/>
+    <text x="590" y="536" fill="url(#sectionTitle)" font-family="'Consolas',monospace" font-size="13" font-weight="700" letter-spacing="3" text-anchor="middle">// ABOUT</text>
+
+    <g class="af1"><text x="65" y="572" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13.5" font-weight="500"><tspan fill="#22D3EE" font-weight="700">▸  </tspan>AI Agent Developer — ReAct, LLM Orchestration, Autonomous Systems</text></g>
+    <g class="af2"><text x="65" y="602" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13.5" font-weight="500"><tspan fill="#22D3EE" font-weight="700">▸  </tspan>Python Backend Developer — Flask, Socket.IO, Real-time APIs</text></g>
+    <g class="af3"><text x="65" y="632" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13.5" font-weight="500"><tspan fill="#22D3EE" font-weight="700">▸  </tspan>Linux Enthusiast — Custom Hyprland Desktop Environment</text></g>
+    <g class="af4"><text x="65" y="662" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13.5" font-weight="500"><tspan fill="#22D3EE" font-weight="700">▸  </tspan>Embedded Systems — Arduino, ESP32, Circuit Design</text></g>
+    <g class="af5"><text x="65" y="692" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="13.5" font-weight="500"><tspan fill="#22D3EE" font-weight="700">▸  </tspan>LLM Integrations — Gemini, Claude, Qwen, Prompt Engineering</text></g>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- SECTION 3: TECH STACK (y720 - y910)               -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <line x1="45" y1="720" x2="1135" y2="720" stroke="#FFF" stroke-opacity=".06"/>
+    <text x="590" y="756" fill="url(#sectionTitle)" font-family="'Consolas',monospace" font-size="13" font-weight="700" letter-spacing="3" text-anchor="middle">// TECH STACK</text>
+
+    <!-- Left Column -->
+    <text x="65" y="786" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5" letter-spacing="1.5">LANGUAGES</text>
+    <g transform="translate(65,798)">
+      <rect width="68" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="34" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Python</text>
+      <rect x="76" width="54" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="103" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">C++</text>
+      <rect x="138" width="86" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="181" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">JavaScript</text>
+      <rect x="232" width="64" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="264" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">HTML</text>
+      <rect x="304" width="56" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="332" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">CSS</text>
+    </g>
+
+    <text x="65" y="854" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5" letter-spacing="1.5">FRAMEWORKS</text>
+    <g transform="translate(65,866)">
+      <rect width="58" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="29" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Flask</text>
+      <rect x="66" width="84" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="108" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Socket.IO</text>
+      <rect x="158" width="88" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="202" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Playwright</text>
+      <rect x="254" width="68" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="288" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Docker</text>
+      <rect x="330" width="50" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="355" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Git</text>
+    </g>
+
+    <!-- Right Column -->
+    <text x="600" y="786" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5" letter-spacing="1.5">SYSTEMS</text>
+    <g transform="translate(600,798)">
+      <rect width="62" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="31" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Linux</text>
+      <rect x="70" width="82" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="111" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Hyprland</text>
+      <rect x="160" width="74" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="197" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Arduino</text>
+      <rect x="242" width="64" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="274" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">ESP32</text>
+    </g>
+
+    <text x="600" y="854" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5" letter-spacing="1.5">AI &amp; LLMs</text>
+    <g transform="translate(600,866)">
+      <rect width="70" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="35" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Gemini</text>
+      <rect x="78" width="66" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="111" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Claude</text>
+      <rect x="152" width="62" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="183" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Qwen</text>
+      <rect x="222" width="62" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="253" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">ReAct</text>
+      <rect x="292" width="64" height="26" rx="13" fill="#1E293B" stroke="url(#pillBdr)" stroke-width="1"/><text x="324" y="17" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Llama</text>
+    </g>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- SECTION 4: LATEST PROJECTS (y930 - y1200)         -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <line x1="45" y1="930" x2="1135" y2="930" stroke="#FFF" stroke-opacity=".06"/>
+    <text x="590" y="966" fill="url(#sectionTitle)" font-family="'Consolas',monospace" font-size="13" font-weight="700" letter-spacing="3" text-anchor="middle">// LATEST PROJECTS</text>
 
     <!-- Card 1: AI Agent Framework -->
-    <g class="cf1" transform="translate(55,1018)">
-      <rect width="340" height="165" rx="16" fill="#0F172A" fill-opacity=".9" stroke="url(#cardBdr1)" stroke-width="1.3" filter="url(#cardGlow)"/>
-      <rect x="1" y="1" width="338" height="163" rx="15" fill="none" stroke="#FFF" stroke-opacity=".04"/>
+    <g class="cf1" transform="translate(55,986)">
+      <rect width="340" height="160" rx="16" fill="#0F172A" fill-opacity=".9" stroke="url(#cardBdr1)" stroke-width="1.3" filter="url(#cardGlow)"/>
+      <rect x="1" y="1" width="338" height="158" rx="15" fill="none" stroke="#FFF" stroke-opacity=".03"/>
       <circle cx="22" cy="22" r="4" fill="#7C3AED" opacity=".9"/>
-      <text x="36" y="26" fill="#94A3B8" font-family="Consolas,monospace" font-size="10" letter-spacing="1">PROJECT 01</text>
-      <text x="22" y="54" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="17" font-weight="700">AI Agent Framework</text>
-      <text x="22" y="78" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="12" font-weight="400">Autonomous ReAct agent system with</text>
-      <text x="22" y="95" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="12" font-weight="400">multi-LLM orchestration &amp; tool use</text>
-      <g transform="translate(22,112)">
-        <rect width="64" height="22" rx="11" fill="#1E293B" stroke="#7C3AED" stroke-opacity=".4"/><text x="32" y="15" fill="#C084FC" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">Python</text>
-        <rect x="70" width="56" height="22" rx="11" fill="#1E293B" stroke="#7C3AED" stroke-opacity=".4"/><text x="98" y="15" fill="#C084FC" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">Flask</text>
-        <rect x="132" width="68" height="22" rx="11" fill="#1E293B" stroke="#7C3AED" stroke-opacity=".4"/><text x="166" y="15" fill="#C084FC" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">Gemini</text>
+      <text x="36" y="26" fill="#94A3B8" font-family="'Consolas',monospace" font-size="9.5" letter-spacing="1">LATEST • Jul 2025</text>
+      <text x="22" y="52" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="16" font-weight="700">AI Agent Framework</text>
+      <text x="22" y="74" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11.5">Autonomous ReAct agent system with</text>
+      <text x="22" y="90" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11.5">multi-LLM orchestration &amp; tool use</text>
+      <g transform="translate(22,108)">
+        <rect width="62" height="20" rx="10" fill="#1E293B" stroke="#7C3AED" stroke-opacity=".4"/><text x="31" y="14" fill="#C084FC" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Python</text>
+        <rect x="68" width="52" height="20" rx="10" fill="#1E293B" stroke="#7C3AED" stroke-opacity=".4"/><text x="94" y="14" fill="#C084FC" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Flask</text>
+        <rect x="126" width="66" height="20" rx="10" fill="#1E293B" stroke="#7C3AED" stroke-opacity=".4"/><text x="159" y="14" fill="#C084FC" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Gemini</text>
       </g>
+      <text x="270" y="138" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10">⭐ 3</text>
+      <text x="300" y="138" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10">🔀 2</text>
     </g>
 
     <!-- Card 2: Hardware Controller -->
-    <g class="cf2" transform="translate(415,1018)">
-      <rect width="340" height="165" rx="16" fill="#0F172A" fill-opacity=".9" stroke="url(#cardBdr2)" stroke-width="1.3" filter="url(#cardGlow)"/>
-      <rect x="1" y="1" width="338" height="163" rx="15" fill="none" stroke="#FFF" stroke-opacity=".04"/>
+    <g class="cf2" transform="translate(415,986)">
+      <rect width="340" height="160" rx="16" fill="#0F172A" fill-opacity=".9" stroke="url(#cardBdr2)" stroke-width="1.3" filter="url(#cardGlow)"/>
+      <rect x="1" y="1" width="338" height="158" rx="15" fill="none" stroke="#FFF" stroke-opacity=".03"/>
       <circle cx="22" cy="22" r="4" fill="#10B981" opacity=".9"/>
-      <text x="36" y="26" fill="#94A3B8" font-family="Consolas,monospace" font-size="10" letter-spacing="1">PROJECT 02</text>
-      <text x="22" y="54" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="17" font-weight="700">Hardware Controller</text>
-      <text x="22" y="78" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="12" font-weight="400">Custom PCB design with Li-Po power</text>
-      <text x="22" y="95" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="12" font-weight="400">management &amp; USB-C integration</text>
-      <g transform="translate(22,112)">
-        <rect width="72" height="22" rx="11" fill="#1E293B" stroke="#10B981" stroke-opacity=".4"/><text x="36" y="15" fill="#34D399" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">Arduino</text>
-        <rect x="78" width="62" height="22" rx="11" fill="#1E293B" stroke="#10B981" stroke-opacity=".4"/><text x="109" y="15" fill="#34D399" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">ESP32</text>
-        <rect x="146" width="56" height="22" rx="11" fill="#1E293B" stroke="#10B981" stroke-opacity=".4"/><text x="174" y="15" fill="#34D399" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">Li-Po</text>
-        <rect x="208" width="66" height="22" rx="11" fill="#1E293B" stroke="#10B981" stroke-opacity=".4"/><text x="241" y="15" fill="#34D399" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">USB-C</text>
+      <text x="36" y="26" fill="#94A3B8" font-family="'Consolas',monospace" font-size="9.5" letter-spacing="1">LATEST • Jul 2025</text>
+      <text x="22" y="52" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Hardware Controller</text>
+      <text x="22" y="74" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11.5">Custom PCB design with Li-Po power</text>
+      <text x="22" y="90" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11.5">management &amp; USB-C integration</text>
+      <g transform="translate(22,108)">
+        <rect width="70" height="20" rx="10" fill="#1E293B" stroke="#10B981" stroke-opacity=".4"/><text x="35" y="14" fill="#34D399" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Arduino</text>
+        <rect x="76" width="60" height="20" rx="10" fill="#1E293B" stroke="#10B981" stroke-opacity=".4"/><text x="106" y="14" fill="#34D399" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">ESP32</text>
+        <rect x="142" width="54" height="20" rx="10" fill="#1E293B" stroke="#10B981" stroke-opacity=".4"/><text x="169" y="14" fill="#34D399" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">C++</text>
       </g>
+      <text x="270" y="138" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10">⭐ 2</text>
+      <text x="300" y="138" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10">🔀 1</text>
     </g>
 
-    <!-- Card 3: Portfolio Website -->
-    <g class="cf3" transform="translate(775,1018)">
-      <rect width="340" height="165" rx="16" fill="#0F172A" fill-opacity=".9" stroke="url(#cardBdr3)" stroke-width="1.3" filter="url(#cardGlow)"/>
-      <rect x="1" y="1" width="338" height="163" rx="15" fill="none" stroke="#FFF" stroke-opacity=".04"/>
+    <!-- Card 3: Portfolio -->
+    <g class="cf3" transform="translate(775,986)">
+      <rect width="340" height="160" rx="16" fill="#0F172A" fill-opacity=".9" stroke="url(#cardBdr3)" stroke-width="1.3" filter="url(#cardGlow)"/>
+      <rect x="1" y="1" width="338" height="158" rx="15" fill="none" stroke="#FFF" stroke-opacity=".03"/>
       <circle cx="22" cy="22" r="4" fill="#EC4899" opacity=".9"/>
-      <text x="36" y="26" fill="#94A3B8" font-family="Consolas,monospace" font-size="10" letter-spacing="1">PROJECT 03</text>
-      <text x="22" y="54" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="17" font-weight="700">Portfolio Website</text>
-      <text x="22" y="78" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="12" font-weight="400">Modern developer portfolio with</text>
-      <text x="22" y="95" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="12" font-weight="400">premium animations &amp; responsive UI</text>
-      <g transform="translate(22,112)">
-        <rect width="84" height="22" rx="11" fill="#1E293B" stroke="#EC4899" stroke-opacity=".4"/><text x="42" y="15" fill="#F472B6" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">Modern UI</text>
-        <rect x="90" width="88" height="22" rx="11" fill="#1E293B" stroke="#EC4899" stroke-opacity=".4"/><text x="134" y="15" fill="#F472B6" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">Responsive</text>
-        <rect x="184" width="64" height="22" rx="11" fill="#1E293B" stroke="#EC4899" stroke-opacity=".4"/><text x="216" y="15" fill="#F472B6" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle">Vercel</text>
+      <text x="36" y="26" fill="#94A3B8" font-family="'Consolas',monospace" font-size="9.5" letter-spacing="1">LATEST • Jul 2025</text>
+      <text x="22" y="52" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Alttre Portfolio</text>
+      <text x="22" y="74" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11.5">Modern developer portfolio with</text>
+      <text x="22" y="90" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11.5">premium animations &amp; dark mode</text>
+      <g transform="translate(22,108)">
+        <rect width="56" height="20" rx="10" fill="#1E293B" stroke="#EC4899" stroke-opacity=".4"/><text x="28" y="14" fill="#F472B6" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">React</text>
+        <rect x="62" width="60" height="20" rx="10" fill="#1E293B" stroke="#EC4899" stroke-opacity=".4"/><text x="92" y="14" fill="#F472B6" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Vercel</text>
+        <rect x="128" width="78" height="20" rx="10" fill="#1E293B" stroke="#EC4899" stroke-opacity=".4"/><text x="167" y="14" fill="#F472B6" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Responsive</text>
       </g>
+      <text x="270" y="138" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10">⭐ 2</text>
+      <text x="300" y="138" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10">🔀 1</text>
     </g>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- SECTION: GITHUB DASHBOARD (y=1210..1580) -->
-    <!-- ═══════════════════════════════════════════ -->
-    <line x1="45" y1="1210" x2="1135" y2="1210" stroke="#FFF" stroke-opacity=".06"/>
-    <text x="590" y="1248" fill="url(#sectionTitle)" font-family="Consolas,monospace" font-size="14" font-weight="700" letter-spacing="3" text-anchor="middle">// GITHUB DASHBOARD</text>
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- SECTION 5: GITHUB DASHBOARD (y1180 - y1680)       -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <line x1="45" y1="1180" x2="1135" y2="1180" stroke="#FFF" stroke-opacity=".06"/>
+    <text x="590" y="1216" fill="url(#sectionTitle)" font-family="'Consolas',monospace" font-size="13" font-weight="700" letter-spacing="3" text-anchor="middle">// GITHUB DASHBOARD</text>
 
-    <!-- Stats Metric Cards Row -->
-    <g transform="translate(55,1268)">
-      <!-- Repos -->
-      <rect width="160" height="80" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
-      <text x="80" y="30" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">REPOSITORIES</text>
-      <text x="80" y="62" fill="#22D3EE" font-family="system-ui,sans-serif" font-size="28" font-weight="800" text-anchor="middle">19</text>
-
-      <!-- Stars -->
-      <g transform="translate(175,0)">
-        <rect width="160" height="80" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
-        <text x="80" y="30" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">STARS</text>
-        <text x="80" y="62" fill="#F59E0B" font-family="system-ui,sans-serif" font-size="28" font-weight="800" text-anchor="middle">19</text>
-      </g>
-
-      <!-- Followers -->
-      <g transform="translate(350,0)">
-        <rect width="160" height="80" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
-        <text x="80" y="30" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">FOLLOWERS</text>
-        <text x="80" y="62" fill="#7C3AED" font-family="system-ui,sans-serif" font-size="28" font-weight="800" text-anchor="middle">5</text>
-      </g>
-
-      <!-- Following -->
-      <g transform="translate(525,0)">
-        <rect width="160" height="80" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
-        <text x="80" y="30" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">FOLLOWING</text>
-        <text x="80" y="62" fill="#10B981" font-family="system-ui,sans-serif" font-size="28" font-weight="800" text-anchor="middle">5</text>
-      </g>
-
-      <!-- Commits -->
-      <g transform="translate(700,0)">
-        <rect width="160" height="80" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
-        <text x="80" y="30" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">COMMITS</text>
-        <text x="80" y="62" fill="#38BDF8" font-family="system-ui,sans-serif" font-size="28" font-weight="800" text-anchor="middle">120+</text>
-      </g>
-
-      <!-- PRs -->
-      <g transform="translate(875,0)">
-        <rect width="160" height="80" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
-        <text x="80" y="30" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">PULL REQUESTS</text>
-        <text x="80" y="62" fill="#C084FC" font-family="system-ui,sans-serif" font-size="28" font-weight="800" text-anchor="middle">8</text>
-      </g>
+    <!-- Stats Row (6 metric cards) -->
+    <g transform="translate(55,1240)">
+      <rect width="168" height="76" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
+      <text x="84" y="28" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle" letter-spacing="1">REPOSITORIES</text>
+      <text x="84" y="58" fill="#22D3EE" font-family="system-ui,sans-serif" font-size="26" font-weight="800" text-anchor="middle">19</text>
+    </g>
+    <g transform="translate(233,1240)">
+      <rect width="168" height="76" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
+      <text x="84" y="28" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle" letter-spacing="1">STARS</text>
+      <text x="84" y="58" fill="#F59E0B" font-family="system-ui,sans-serif" font-size="26" font-weight="800" text-anchor="middle">19</text>
+    </g>
+    <g transform="translate(411,1240)">
+      <rect width="168" height="76" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
+      <text x="84" y="28" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle" letter-spacing="1">FOLLOWERS</text>
+      <text x="84" y="58" fill="#7C3AED" font-family="system-ui,sans-serif" font-size="26" font-weight="800" text-anchor="middle">5</text>
+    </g>
+    <g transform="translate(589,1240)">
+      <rect width="168" height="76" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
+      <text x="84" y="28" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle" letter-spacing="1">FOLLOWING</text>
+      <text x="84" y="58" fill="#10B981" font-family="system-ui,sans-serif" font-size="26" font-weight="800" text-anchor="middle">5</text>
+    </g>
+    <g transform="translate(767,1240)">
+      <rect width="168" height="76" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
+      <text x="84" y="28" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle" letter-spacing="1">COMMITS</text>
+      <text x="84" y="58" fill="#38BDF8" font-family="system-ui,sans-serif" font-size="26" font-weight="800" text-anchor="middle">120+</text>
+    </g>
+    <g transform="translate(945,1240)">
+      <rect width="168" height="76" rx="14" fill="#0F172A" fill-opacity=".85" stroke="#FFF" stroke-opacity=".06"/>
+      <text x="84" y="28" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10" font-weight="600" text-anchor="middle" letter-spacing="1">PULL REQUESTS</text>
+      <text x="84" y="58" fill="#C084FC" font-family="system-ui,sans-serif" font-size="26" font-weight="800" text-anchor="middle">8</text>
     </g>
 
     <!-- Contribution Heatmap -->
-    <g transform="translate(55,1370)">
-      <text x="0" y="14" fill="#94A3B8" font-family="Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1">CONTRIBUTION HEATMAP</text>
+    <text x="55" y="1350" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5" font-weight="600" letter-spacing="1.5">CONTRIBUTION HEATMAP</text>
 
-      <!-- Heatmap Grid (7 rows x ~50 cols) -->
-      <g transform="translate(0,24)">
-        <!-- Generate rows for Mon-Sun using different opacities to simulate contribution levels -->
-        <!-- Row 1 (Mon) -->
-        <rect x="0" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="13" y="0" width="10" height="10" rx="2" fill="#064E3B" opacity=".7"/><rect x="26" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="39" y="0" width="10" height="10" rx="2" fill="#059669" opacity=".8"/><rect x="52" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="65" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="78" y="0" width="10" height="10" rx="2" fill="#064E3B" opacity=".7"/><rect x="91" y="0" width="10" height="10" rx="2" fill="#059669" opacity=".8"/><rect x="104" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="117" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="130" y="0" width="10" height="10" rx="2" fill="#34D399"/><rect x="143" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="156" y="0" width="10" height="10" rx="2" fill="#064E3B" opacity=".7"/><rect x="169" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="182" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="195" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="208" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="221" y="0" width="10" height="10" rx="2" fill="#064E3B" opacity=".5"/><rect x="234" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="247" y="0" width="10" height="10" rx="2" fill="#34D399"/><rect x="260" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="273" y="0" width="10" height="10" rx="2" fill="#064E3B" opacity=".7"/><rect x="286" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="299" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="312" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="325" y="0" width="10" height="10" rx="2" fill="#34D399"/><rect x="338" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="351" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="364" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="377" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="390" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="403" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="416" y="0" width="10" height="10" rx="2" fill="#34D399"/><rect x="429" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="442" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="455" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="468" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="481" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="494" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="507" y="0" width="10" height="10" rx="2" fill="#34D399"/>
-        <!-- Row 2 (Tue) -->
-        <rect x="0" y="13" width="10" height="10" rx="2" fill="#064E3B" opacity=".7"/><rect x="13" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="26" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="39" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="52" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="65" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="78" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="91" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="104" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="117" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="130" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="143" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="156" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="169" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="182" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="195" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="208" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="221" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="234" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="247" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="260" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="273" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="286" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="299" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="312" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="325" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="338" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="351" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="364" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="377" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="390" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="403" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="416" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="429" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="442" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="455" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="468" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="481" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="494" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="507" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/>
-        <!-- Row 3 (Wed) -->
-        <rect x="0" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="13" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="26" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="39" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="52" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="65" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="78" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="91" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="104" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="117" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="130" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="143" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="156" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="169" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="182" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="195" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="208" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="221" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="234" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="247" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="260" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="273" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="286" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="299" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="312" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="325" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="338" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="351" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="364" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="377" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="390" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="403" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="416" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="429" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="442" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="455" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="468" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="481" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="494" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="507" y="26" width="10" height="10" rx="2" fill="#059669"/>
-        <!-- Row 4-7 abbreviated but visually filled -->
-        <rect x="0" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="13" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="26" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="39" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="52" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="65" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="78" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="91" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="104" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="117" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="130" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="143" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="156" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="169" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="182" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="195" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="208" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="221" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="234" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="247" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="260" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="273" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="286" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="299" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="312" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="325" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="338" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="351" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="364" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="377" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="390" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="403" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="416" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="429" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="442" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="455" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="468" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="481" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="494" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="507" y="39" width="10" height="10" rx="2" fill="#34D399"/>
-      </g>
-
-      <!-- Heatmap Legend -->
-      <g transform="translate(370,100)">
-        <text x="0" y="10" fill="#64748B" font-family="system-ui,sans-serif" font-size="10">Less</text>
-        <rect x="30" y="0" width="12" height="12" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/>
-        <rect x="45" y="0" width="12" height="12" rx="2" fill="#064E3B"/>
-        <rect x="60" y="0" width="12" height="12" rx="2" fill="#059669"/>
-        <rect x="75" y="0" width="12" height="12" rx="2" fill="#10B981"/>
-        <rect x="90" y="0" width="12" height="12" rx="2" fill="#34D399"/>
-        <text x="108" y="10" fill="#64748B" font-family="system-ui,sans-serif" font-size="10">More</text>
-      </g>
+    <g transform="translate(55,1364)">
+      <!-- Week columns, 7 rows each, 40 columns -->
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="13" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="26" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="39" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="52" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="65" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="78" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="91" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="104" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="117" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="130" y="0" width="10" height="10" rx="2" fill="#34D399"/><rect x="143" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="156" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="169" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="182" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="195" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="208" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="221" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="234" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="247" y="0" width="10" height="10" rx="2" fill="#34D399"/><rect x="260" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="273" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="286" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="299" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="312" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="325" y="0" width="10" height="10" rx="2" fill="#34D399"/><rect x="338" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="351" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="364" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="377" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="390" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="403" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="416" y="0" width="10" height="10" rx="2" fill="#34D399"/><rect x="429" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="442" y="0" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="455" y="0" width="10" height="10" rx="2" fill="#064E3B"/><rect x="468" y="0" width="10" height="10" rx="2" fill="#059669"/><rect x="481" y="0" width="10" height="10" rx="2" fill="#10B981"/><rect x="494" y="0" width="10" height="10" rx="2" fill="#34D399"/>
+      <!-- Row 2 -->
+      <rect x="0" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="13" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="26" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="39" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="52" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="65" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="78" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="91" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="104" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="117" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="130" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="143" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="156" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="169" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="182" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="195" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="208" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="221" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="234" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="247" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="260" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="273" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="286" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="299" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="312" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="325" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="338" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="351" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="364" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="377" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="390" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="403" y="13" width="10" height="10" rx="2" fill="#34D399"/><rect x="416" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="429" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="442" y="13" width="10" height="10" rx="2" fill="#064E3B"/><rect x="455" y="13" width="10" height="10" rx="2" fill="#10B981"/><rect x="468" y="13" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="481" y="13" width="10" height="10" rx="2" fill="#059669"/><rect x="494" y="13" width="10" height="10" rx="2" fill="#34D399"/>
+      <!-- Row 3 -->
+      <rect x="0" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="13" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="26" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="39" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="52" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="65" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="78" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="91" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="104" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="117" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="130" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="143" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="156" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="169" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="182" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="195" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="208" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="221" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="234" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="247" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="260" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="273" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="286" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="299" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="312" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="325" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="338" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="351" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="364" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="377" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="390" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="403" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="416" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="429" y="26" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="442" y="26" width="10" height="10" rx="2" fill="#059669"/><rect x="455" y="26" width="10" height="10" rx="2" fill="#34D399"/><rect x="468" y="26" width="10" height="10" rx="2" fill="#064E3B"/><rect x="481" y="26" width="10" height="10" rx="2" fill="#10B981"/><rect x="494" y="26" width="10" height="10" rx="2" fill="#059669"/>
+      <!-- Row 4 -->
+      <rect x="0" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="13" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="26" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="39" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="52" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="65" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="78" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="91" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="104" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="117" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="130" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="143" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="156" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="169" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="182" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="195" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="208" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="221" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="234" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="247" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="260" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="273" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="286" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="299" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="312" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="325" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="338" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="351" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="364" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="377" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="390" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="403" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="416" y="39" width="10" height="10" rx="2" fill="#064E3B"/><rect x="429" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="442" y="39" width="10" height="10" rx="2" fill="#34D399"/><rect x="455" y="39" width="10" height="10" rx="2" fill="#059669"/><rect x="468" y="39" width="10" height="10" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/><rect x="481" y="39" width="10" height="10" rx="2" fill="#10B981"/><rect x="494" y="39" width="10" height="10" rx="2" fill="#064E3B"/>
     </g>
 
-    <!-- Language Distribution -->
-    <g transform="translate(600,1370)">
-      <text x="0" y="14" fill="#94A3B8" font-family="Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1">LANGUAGE DISTRIBUTION</text>
-
-      <!-- Bar Chart -->
-      <g transform="translate(0,28)">
-        <!-- Python -->
-        <rect x="0" y="0" width="450" height="6" rx="3" fill="#1E293B"/>
-        <rect x="0" y="0" width="200" height="6" rx="3" fill="#3B82F6"><animate attributeName="width" from="0" to="200" dur="1.5s" fill="freeze"/></rect>
-        <text x="0" y="22" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">Python</text>
-        <text x="450" y="22" fill="#3B82F6" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">44%</text>
-
-        <!-- C++ -->
-        <rect x="0" y="34" width="450" height="6" rx="3" fill="#1E293B"/>
-        <rect x="0" y="34" width="115" height="6" rx="3" fill="#F472B6"><animate attributeName="width" from="0" to="115" dur="1.5s" fill="freeze"/></rect>
-        <text x="0" y="56" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">C++</text>
-        <text x="450" y="56" fill="#F472B6" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">25%</text>
-
-        <!-- JavaScript -->
-        <rect x="0" y="68" width="450" height="6" rx="3" fill="#1E293B"/>
-        <rect x="0" y="68" width="72" height="6" rx="3" fill="#F59E0B"><animate attributeName="width" from="0" to="72" dur="1.5s" fill="freeze"/></rect>
-        <text x="0" y="90" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">JavaScript</text>
-        <text x="450" y="90" fill="#F59E0B" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">16%</text>
-
-        <!-- HTML/CSS -->
-        <rect x="0" y="102" width="450" height="6" rx="3" fill="#1E293B"/>
-        <rect x="0" y="102" width="45" height="6" rx="3" fill="#34D399"><animate attributeName="width" from="0" to="45" dur="1.5s" fill="freeze"/></rect>
-        <text x="0" y="124" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">HTML/CSS</text>
-        <text x="450" y="124" fill="#34D399" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">10%</text>
-
-        <!-- Shell -->
-        <rect x="0" y="136" width="450" height="6" rx="3" fill="#1E293B"/>
-        <rect x="0" y="136" width="22" height="6" rx="3" fill="#818CF8"><animate attributeName="width" from="0" to="22" dur="1.5s" fill="freeze"/></rect>
-        <text x="0" y="158" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">Shell</text>
-        <text x="450" y="158" fill="#818CF8" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">5%</text>
-      </g>
+    <!-- Heatmap Legend -->
+    <g transform="translate(380,1438)">
+      <text x="0" y="10" fill="#64748B" font-family="system-ui,sans-serif" font-size="10">Less</text>
+      <rect x="30" y="0" width="12" height="12" rx="2" fill="#0F172A" stroke="#1E293B" stroke-width=".5"/>
+      <rect x="45" y="0" width="12" height="12" rx="2" fill="#064E3B"/>
+      <rect x="60" y="0" width="12" height="12" rx="2" fill="#059669"/>
+      <rect x="75" y="0" width="12" height="12" rx="2" fill="#10B981"/>
+      <rect x="90" y="0" width="12" height="12" rx="2" fill="#34D399"/>
+      <text x="108" y="10" fill="#64748B" font-family="system-ui,sans-serif" font-size="10">More</text>
     </g>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- SECTION: FOOTER (y=1580..1760) -->
-    <!-- ═══════════════════════════════════════════ -->
-    <line x1="45" y1="1610" x2="1135" y2="1610" stroke="#FFF" stroke-opacity=".06"/>
+    <!-- Language Distribution (RIGHT side of heatmap) -->
+    <text x="620" y="1350" fill="#94A3B8" font-family="'Consolas',monospace" font-size="10.5" font-weight="600" letter-spacing="1.5">LANGUAGE DISTRIBUTION</text>
 
-    <!-- Animated Separator Glow -->
-    <rect x="400" y="1608" width="380" height="4" rx="2" fill="url(#shimmer)" opacity=".5"/>
+    <g transform="translate(620,1368)">
+      <!-- Python -->
+      <rect x="0" y="0" width="480" height="5" rx="2.5" fill="#1E293B"/>
+      <rect x="0" y="0" width="210" height="5" rx="2.5" fill="#3B82F6"><animate attributeName="width" from="0" to="210" dur="1.5s" fill="freeze"/></rect>
+      <text x="0" y="20" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">Python</text>
+      <text x="480" y="20" fill="#3B82F6" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">44%</text>
 
-    <!-- Footer Social Row -->
-    <g transform="translate(590,1640)">
+      <!-- C++ -->
+      <rect x="0" y="30" width="480" height="5" rx="2.5" fill="#1E293B"/>
+      <rect x="0" y="30" width="120" height="5" rx="2.5" fill="#F472B6"><animate attributeName="width" from="0" to="120" dur="1.5s" fill="freeze"/></rect>
+      <text x="0" y="50" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">C++</text>
+      <text x="480" y="50" fill="#F472B6" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">25%</text>
+
+      <!-- JavaScript -->
+      <rect x="0" y="60" width="480" height="5" rx="2.5" fill="#1E293B"/>
+      <rect x="0" y="60" width="77" height="5" rx="2.5" fill="#F59E0B"><animate attributeName="width" from="0" to="77" dur="1.5s" fill="freeze"/></rect>
+      <text x="0" y="80" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">JavaScript</text>
+      <text x="480" y="80" fill="#F59E0B" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">16%</text>
+
+      <!-- HTML/CSS -->
+      <rect x="0" y="90" width="480" height="5" rx="2.5" fill="#1E293B"/>
+      <rect x="0" y="90" width="48" height="5" rx="2.5" fill="#34D399"><animate attributeName="width" from="0" to="48" dur="1.5s" fill="freeze"/></rect>
+      <text x="0" y="110" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">HTML/CSS</text>
+      <text x="480" y="110" fill="#34D399" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">10%</text>
+
+      <!-- Shell -->
+      <rect x="0" y="120" width="480" height="5" rx="2.5" fill="#1E293B"/>
+      <rect x="0" y="120" width="24" height="5" rx="2.5" fill="#818CF8"><animate attributeName="width" from="0" to="24" dur="1.5s" fill="freeze"/></rect>
+      <text x="0" y="140" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="11">Shell</text>
+      <text x="480" y="140" fill="#818CF8" font-family="system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="end">5%</text>
+    </g>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- SECTION 6: FOOTER (y1680 - y1880)                 -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <line x1="45" y1="1680" x2="1135" y2="1680" stroke="#FFF" stroke-opacity=".06"/>
+    <rect x="440" y="1678" width="300" height="4" rx="2" fill="url(#shimmer)" opacity=".4"/>
+
+    <!-- Social Buttons -->
+    <g transform="translate(590,1720)">
       <!-- GitHub -->
-      <g class="social-icon" transform="translate(-230,0)">
-        <rect width="110" height="34" rx="8" fill="#1E293B" fill-opacity=".85" stroke="#FFF" stroke-opacity=".08"/>
-        <path d="M15 8C10 8 6 12 6 17c0 4 2.5 7.3 6 8.5.5.1.7-.2.7-.5v-1.9c-2.5.5-3-.6-3-.6-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.3 1 1.3 1 .8 1.4 2.1 1 2.6.8.1-.6.3-1 .5-1.3-2-.2-4.1-1-4.1-4.5 0-1 .4-1.8 1-2.5-.1-.2-.4-1.2.1-2.5 0 0 .8-.3 2.6 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c1.8-1.3 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.5.6.7 1 1.5 1 2.5 0 3.5-2.1 4.3-4.1 4.5.3.3.6.9.6 1.8v2.7c0 .3.2.6.7.5 3.5-1.2 6-4.5 6-8.5 0-5-4.2-9-9.4-9z" fill="#F8FAFC"/>
+      <g transform="translate(-240,0)">
+        <rect width="108" height="34" rx="8" fill="#1E293B" fill-opacity=".85" stroke="#FFF" stroke-opacity=".08"/>
+        <path d="M15 8C10 8 6 12 6 17c0 4 2.5 7.3 6 8.5.5.1.7-.2.7-.5v-2c-2.5.5-3-.6-3-.6-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.3 1 1.3 1 .8 1.3 2.1 1 2.6.7.1-.5.3-1 .5-1.2-2-.2-4.1-1-4.1-4.5 0-1 .4-1.8 1-2.4-.1-.2-.4-1.2.1-2.5 0 0 .8-.3 2.6 1 .7-.2 1.5-.3 2.3-.3s1.6.1 2.3.3c1.8-1.3 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.5.6.6 1 1.4 1 2.4 0 3.5-2.1 4.3-4.1 4.5.3.3.6.9.6 1.8V25c0 .3.2.6.7.5 3.5-1.2 6-4.5 6-8.5 0-5-4-9-9-9z" fill="#F8FAFC"/>
         <text x="34" y="22" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Alttrest</text>
       </g>
-
       <!-- Portfolio -->
-      <g class="social-icon" transform="translate(-105,0)">
-        <rect width="105" height="34" rx="8" fill="#1E293B" fill-opacity=".85" stroke="#FFF" stroke-opacity=".08"/>
-        <circle cx="18" cy="17" r="7" fill="none" stroke="#10B981" stroke-width="1.3"/>
-        <line x1="11" y1="17" x2="25" y2="17" stroke="#10B981" stroke-width="1.1"/>
-        <ellipse cx="18" cy="17" rx="3" ry="7" fill="none" stroke="#10B981" stroke-width="1.1"/>
+      <g transform="translate(-118,0)">
+        <rect width="108" height="34" rx="8" fill="#1E293B" fill-opacity=".85" stroke="#FFF" stroke-opacity=".08"/>
+        <circle cx="18" cy="17" r="6.5" fill="none" stroke="#10B981" stroke-width="1.2"/>
+        <line x1="11.5" y1="17" x2="24.5" y2="17" stroke="#10B981" stroke-width="1"/>
+        <ellipse cx="18" cy="17" rx="3" ry="6.5" fill="none" stroke="#10B981" stroke-width="1"/>
         <text x="34" y="22" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Portfolio</text>
       </g>
-
       <!-- LinkedIn -->
-      <g class="social-icon" transform="translate(15,0)">
-        <rect width="105" height="34" rx="8" fill="#1E293B" fill-opacity=".85" stroke="#FFF" stroke-opacity=".08"/>
-        <path d="M12 11h3v14h-3V11zm1.5-4c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zM19 11h3v1.9c.4-.7 1.5-1.5 3-1.5 3 0 3.5 2 3.5 4.6V25h-3v-8.5c0-1.5-.5-2.7-1.8-2.7-1 0-1.7.7-1.7 1.7V25h-3V11z" fill="#38BDF8"/>
+      <g transform="translate(4,0)">
+        <rect width="104" height="34" rx="8" fill="#1E293B" fill-opacity=".85" stroke="#FFF" stroke-opacity=".08"/>
+        <rect x="10" y="10" width="14" height="14" rx="3" fill="none" stroke="#38BDF8" stroke-width="1.2"/>
+        <text x="17" y="21" fill="#38BDF8" font-family="system-ui,sans-serif" font-size="9" font-weight="900">in</text>
         <text x="34" y="22" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="12" font-weight="600">LinkedIn</text>
       </g>
-
       <!-- Email -->
-      <g class="social-icon" transform="translate(135,0)">
-        <rect width="90" height="34" rx="8" fill="#1E293B" fill-opacity=".85" stroke="#FFF" stroke-opacity=".08"/>
-        <rect x="11" y="10" width="16" height="12" rx="2" fill="none" stroke="#C084FC" stroke-width="1.2"/>
-        <path d="M11 11l8 6 8-6" fill="none" stroke="#C084FC" stroke-width="1.2"/>
+      <g transform="translate(122,0)">
+        <rect width="92" height="34" rx="8" fill="#1E293B" fill-opacity=".85" stroke="#FFF" stroke-opacity=".08"/>
+        <rect x="10" y="11" width="14" height="10" rx="2" fill="none" stroke="#C084FC" stroke-width="1.2"/>
+        <path d="M10 12l7 5 7-5" fill="none" stroke="#C084FC" stroke-width="1.2"/>
         <text x="34" y="22" fill="#F8FAFC" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Email</text>
       </g>
     </g>
 
+    <!-- Profile Views Counter (Footer) -->
+    <g transform="translate(500,1774)">
+      <rect width="180" height="26" rx="13" fill="#0F172A" stroke="url(#viewBadge)" stroke-width="1" opacity=".8"/>
+      <text x="16" y="17" fill="#94A3B8" font-family="system-ui,sans-serif" font-size="10">👁️ Profile Views:</text>
+      <text x="120" y="17" fill="#22D3EE" font-family="system-ui,sans-serif" font-size="11" font-weight="700">1,247</text>
+    </g>
+
     <!-- Footer Text -->
-    <text x="590" y="1710" fill="#64748B" font-family="system-ui,sans-serif" font-size="11" text-anchor="middle">Designed &amp; built with ❤️ by Ali Turan</text>
-    <text x="590" y="1730" fill="#475569" font-family="Consolas,monospace" font-size="10" text-anchor="middle">Pure SVG • SMIL Animations • GitHub Compatible</text>
-    <text x="590" y="1750" fill="#334155" font-family="Consolas,monospace" font-size="9" text-anchor="middle">© 2025 Alttrest • All Rights Reserved</text>
+    <text x="590" y="1824" fill="#64748B" font-family="system-ui,sans-serif" font-size="11" text-anchor="middle">Designed &amp; built with ❤️ by Ali Turan</text>
+    <text x="590" y="1844" fill="#475569" font-family="'Consolas',monospace" font-size="10" text-anchor="middle">Pure SVG • SMIL Animations • GitHub Compatible</text>
+    <text x="590" y="1864" fill="#334155" font-family="'Consolas',monospace" font-size="9" text-anchor="middle">© 2025 Alttrest</text>
   </g>
 </svg>

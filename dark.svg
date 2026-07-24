@@ -68,12 +68,6 @@
       .ascii-line-20 { animation: lineReveal 0.4s ease forwards 2.0s; opacity: 0; }
       .ascii-line-21 { animation: lineReveal 0.4s ease forwards 2.1s; opacity: 0; }
       .ascii-line-22 { animation: lineReveal 0.4s ease forwards 2.2s; opacity: 0; }
-
-      /* Info list staggered slide in */
-      .info-item-1 { animation: lineReveal 0.5s ease forwards 0.3s; opacity: 0; }
-      .info-item-2 { animation: lineReveal 0.5s ease forwards 0.5s; opacity: 0; }
-      .info-item-3 { animation: lineReveal 0.5s ease forwards 0.7s; opacity: 0; }
-      .info-item-4 { animation: lineReveal 0.5s ease forwards 0.9s; opacity: 0; }
     </style>
 
     <!-- Gradients -->
@@ -291,147 +285,109 @@
     </circle>
     <text x="1062" y="64" fill="#34D399" font-family="system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="0.5">AVAILABLE</text>
 
-    <!-- SECTION 1: GREETING & NAME (Fluid TSPAN flow) -->
-    <g transform="translate(520, 104)">
-      <text x="0" y="26" font-family="system-ui, -apple-system, sans-serif">
-        <tspan fill="#94A3B8" font-size="20" font-weight="500">Merhaba 👋, Ben </tspan>
-        <tspan fill="url(#titleGradientDark)" font-size="30" font-weight="800" letter-spacing="-0.5">Ali (Alttrest)</tspan>
-      </text>
-    </g>
+    <!-- SECTION 1: GREETING & NAME (Stack on separate Y lines for zero overlap) -->
+    <text x="520" y="118" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500">Merhaba 👋, Ben</text>
+    <text x="520" y="152" fill="url(#titleGradientDark)" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="800" letter-spacing="-0.5">Ali (Alttrest)</text>
 
-    <!-- SECTION 2: ANIMATED TYPING SUBTITLE (Fluid TSPAN flow) -->
-    <g transform="translate(520, 158)">
-      <text x="0" y="0" font-family="Consolas, 'Fira Code', monospace" font-size="14">
-        <tspan fill="#64748B" font-weight="700">$ </tspan>
-        <tspan fill="#38BDF8" font-weight="700">role --current </tspan>
-        <tspan fill="#94A3B8">&gt; </tspan>
-        <tspan fill="#22D3EE" font-weight="700">
-          <animate attributeName="textContent" values="AI Agent Architect;ReAct Systems Developer;Hardware &amp; IoT Engineer;Linux &amp; Hyprland Enthusiast;AI Agent Architect" dur="15s" repeatCount="indefinite" />
-        </tspan>
-        <tspan fill="#22D3EE" class="cursor"> █</tspan>
-      </text>
-    </g>
+    <!-- SECTION 2: ANIMATED TYPING SUBTITLE (Clean Y separation) -->
+    <text x="520" y="184" fill="#38BDF8" font-family="Consolas, 'Fira Code', monospace" font-size="13" font-weight="700">$ role --current &gt;</text>
+    <text x="535" y="206" fill="#22D3EE" font-family="Consolas, 'Fira Code', monospace" font-size="14" font-weight="700">
+      <tspan>
+        <animate attributeName="textContent" values="⚡ AI Agent Architect;⚡ ReAct Systems Developer;⚡ Hardware &amp; IoT Engineer;⚡ Linux &amp; Hyprland Enthusiast;⚡ AI Agent Architect" dur="15s" repeatCount="indefinite" />
+      </tspan>
+      <tspan fill="#22D3EE" class="cursor"> █</tspan>
+    </text>
 
-    <line x1="520" y1="180" x2="1105" y2="180" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+    <line x1="520" y1="222" x2="1105" y2="222" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
 
-    <!-- SECTION 3: QUICK INFO MATRIX (Fluid TSPAN flow, Clean vertical list) -->
-    <g transform="translate(520, 196)">
-      <!-- Item 1: Location -->
-      <g class="info-item-1" transform="translate(0, 16)">
-        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13">
-          <tspan fill="#818CF8">📍 </tspan>
-          <tspan fill="#94A3B8" font-weight="500">Konum: </tspan>
-          <tspan fill="#F8FAFC" font-weight="600">Türkiye 🇹🇷 / Remote</tspan>
-        </text>
-      </g>
+    <!-- SECTION 3: QUICK INFO MATRIX (Explicit Y lines, 100% Collision-free) -->
+    <text x="520" y="245" font-family="system-ui, sans-serif" font-size="13">
+      <tspan fill="#818CF8">📍 Konum:</tspan><tspan fill="#F8FAFC" font-weight="600"> Türkiye 🇹🇷 / Remote</tspan>
+    </text>
+    <text x="520" y="268" font-family="system-ui, sans-serif" font-size="13">
+      <tspan fill="#818CF8">⚡ Uzmanlık:</tspan><tspan fill="#F8FAFC" font-weight="600"> AI Agents, ReAct &amp; Embedded Systems</tspan>
+    </text>
+    <text x="520" y="291" font-family="system-ui, sans-serif" font-size="13">
+      <tspan fill="#818CF8">🎯 Odak Noktası:</tspan><tspan fill="#F8FAFC" font-weight="600"> LLM Architectures &amp; Donanım Tasarımı</tspan>
+    </text>
+    <text x="520" y="314" font-family="system-ui, sans-serif" font-size="13">
+      <tspan fill="#818CF8">💼 Portfolyo:</tspan><tspan fill="#38BDF8" font-weight="600"> alttre-portfolio.vercel.app</tspan>
+    </text>
 
-      <!-- Item 2: Focus / Expertise -->
-      <g class="info-item-2" transform="translate(290, 16)">
-        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13">
-          <tspan fill="#818CF8">⚡ </tspan>
-          <tspan fill="#94A3B8" font-weight="500">Uzmanlık: </tspan>
-          <tspan fill="#F8FAFC" font-weight="600">AI Agents &amp; Hardware</tspan>
-        </text>
-      </g>
-
-      <!-- Item 3: Current Focus -->
-      <g class="info-item-3" transform="translate(0, 44)">
-        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13">
-          <tspan fill="#818CF8">🎯 </tspan>
-          <tspan fill="#94A3B8" font-weight="500">Şu Anki Odak: </tspan>
-          <tspan fill="#F8FAFC" font-weight="600">ReAct AI Architectures &amp; Devreler</tspan>
-        </text>
-      </g>
-
-      <!-- Item 4: Portfolio -->
-      <g class="info-item-4" transform="translate(0, 72)">
-        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13">
-          <tspan fill="#818CF8">💼 </tspan>
-          <tspan fill="#94A3B8" font-weight="500">Portfolyo: </tspan>
-          <tspan fill="#38BDF8" font-weight="600">alttre-portfolio.vercel.app</tspan>
-        </text>
-      </g>
-    </g>
-
-    <line x1="520" y1="290" x2="1105" y2="290" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+    <line x1="520" y1="332" x2="1105" y2="332" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
 
     <!-- SECTION 4: SKILLS SECTION (Glowing Pills Grid) -->
-    <g transform="translate(520, 308)">
+    <g transform="translate(520, 338)">
       <text x="0" y="14" fill="#38BDF8" font-family="Consolas, monospace" font-size="12" font-weight="700" letter-spacing="1.5">// TEKNOLOJİLER &amp; UZMANLIK</text>
 
-      <!-- Grid of Glowing Pills -->
       <!-- Row 1 -->
-      <g class="pill" transform="translate(0, 28)">
+      <g class="pill" transform="translate(0, 26)">
         <rect width="76" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="38" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Python</text>
       </g>
-      <g class="pill" transform="translate(84, 28)">
+      <g class="pill" transform="translate(84, 26)">
         <rect width="64" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="32" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">C++</text>
       </g>
-      <g class="pill" transform="translate(156, 28)">
+      <g class="pill" transform="translate(156, 26)">
         <rect width="96" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="48" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">JavaScript</text>
       </g>
-      <g class="pill" transform="translate(260, 28)">
+      <g class="pill" transform="translate(260, 26)">
         <rect width="68" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="34" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Flask</text>
       </g>
-      <g class="pill" transform="translate(336, 28)">
+      <g class="pill" transform="translate(336, 26)">
         <rect width="90" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="45" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">AI Agents</text>
       </g>
-      <g class="pill" transform="translate(434, 28)">
+      <g class="pill" transform="translate(434, 26)">
         <rect width="76" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="38" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Docker</text>
       </g>
 
       <!-- Row 2 -->
-      <g class="pill" transform="translate(0, 66)">
+      <g class="pill" transform="translate(0, 64)">
         <rect width="70" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="35" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Linux</text>
       </g>
-      <g class="pill" transform="translate(78, 66)">
+      <g class="pill" transform="translate(78, 64)">
         <rect width="82" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="41" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Arduino</text>
       </g>
-      <g class="pill" transform="translate(168, 66)">
+      <g class="pill" transform="translate(168, 64)">
         <rect width="90" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="45" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Hyprland</text>
       </g>
-      <g class="pill" transform="translate(266, 66)">
+      <g class="pill" transform="translate(266, 64)">
         <rect width="102" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="51" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">WebSockets</text>
       </g>
-      <g class="pill" transform="translate(376, 66)">
+      <g class="pill" transform="translate(376, 64)">
         <rect width="56" height="28" rx="14" fill="#1E293B" stroke="url(#pillBorderGrad)" stroke-width="1.2" filter="url(#glowSoft)" />
         <text x="28" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Git</text>
       </g>
     </g>
 
-    <line x1="520" y1="428" x2="1105" y2="428" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+    <line x1="520" y1="444" x2="1105" y2="444" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
 
-    <!-- SECTION 5: SOCIAL LINKS FOOTER (Minimal Glowing Vector Icons) -->
-    <g transform="translate(520, 446)">
-      <text x="0" y="24" fill="#94A3B8" font-family="Consolas, monospace" font-size="12" font-weight="600">// BAĞLANTILAR:</text>
+    <!-- SECTION 5: SOCIAL LINKS FOOTER (Clean Local Vector Icons) -->
+    <text x="520" y="480" fill="#94A3B8" font-family="Consolas, monospace" font-size="12" font-weight="600">// BAĞLANTILAR:</text>
 
-      <!-- Social Button 1: GitHub -->
-      <g class="social-icon" transform="translate(125, 6)">
-        <rect width="115" height="32" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#FFFFFF" stroke-opacity="0.1" />
-        <!-- GitHub Icon -->
-        <path d="M145 15 C140 15 136 19 136 24 C136 28 138.5 31.3 142 32.5 C142.5 32.6 142.7 32.3 142.7 32 C142.7 31.7 142.7 31 142.7 30.1 C140.2 30.6 139.7 28.9 139.7 28.9 C139.3 27.9 138.7 27.6 138.7 27.6 C137.9 27 138.7 27 138.7 27 C139.6 27.1 140 28 140 28 C140.8 29.4 142.1 29 142.6 28.8 C142.7 28.2 142.9 27.8 143.2 27.5 C141.2 27.3 139.1 26.5 139.1 23 C139.1 22 139.5 21.2 140.1 20.5 C140 20.3 139.7 19.3 140.2 18 C140.2 18 141 17.7 142.8 19 C143.6 18.8 144.4 18.7 145.2 18.7 C146 18.7 146.8 18.8 147.6 19 C149.4 17.7 150.2 18 150.2 18 C150.7 19.3 150.4 20.3 150.3 20.5 C150.9 21.2 151.3 22 151.3 23 C151.3 26.5 149.2 27.3 147.2 27.5 C147.5 27.8 147.8 28.4 147.8 29.3 C147.8 30.6 147.8 31.7 147.8 32 C147.8 32.3 148 32.6 148.5 32.5 C152 31.3 154.4 28 154.4 24 C154.4 19 150.2 15 145 15 Z" fill="#F8FAFC" />
-        <text x="164" y="21" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Alttrest</text>
-      </g>
+    <!-- Social Button 1: GitHub -->
+    <g class="social-icon" transform="translate(630, 460)">
+      <rect width="115" height="32" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <path d="M15 8 C10 8 6 12 6 17 C6 21 8.5 24.3 12 25.5 C12.5 25.6 12.7 25.3 12.7 25 C12.7 24.7 12.7 24 12.7 23.1 C10.2 23.6 9.7 21.9 9.7 21.9 C9.3 20.9 8.7 20.6 8.7 20.6 C7.9 20 8.7 20 8.7 20 C9.6 20.1 10 21 10 21 C10.8 22.4 12.1 22 12.6 21.8 C12.7 21.2 12.9 20.8 13.2 20.5 C11.2 20.3 9.1 19.5 9.1 16 C9.1 15 9.5 14.2 10.1 13.5 C10 13.3 9.7 12.3 10.2 11 C10.2 11 11 10.7 12.8 12 C13.6 11.8 14.4 11.7 15.2 11.7 C16 11.7 16.8 11.8 17.6 12 C19.4 10.7 20.2 11 20.2 11 C20.7 12.3 20.4 13.3 20.3 13.5 C20.9 14.2 21.3 15 21.3 16 C21.3 19.5 19.2 20.3 17.2 20.5 C17.5 20.8 17.8 21.4 17.8 22.3 C17.8 23.6 17.8 24.7 17.8 25 C17.8 25.3 18 25.6 18.5 25.5 C22 24.3 24.4 21 24.4 17 C24.4 12 20.2 8 15 8 Z" fill="#F8FAFC" />
+      <text x="34" y="21" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Alttrest</text>
+    </g>
 
-      <!-- Social Button 2: Website / Portfolio -->
-      <g class="social-icon" transform="translate(252, 6)">
-        <rect width="125" height="32" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#FFFFFF" stroke-opacity="0.1" />
-        <!-- Globe Icon -->
-        <circle cx="268" cy="22" r="7" fill="none" stroke="#10B981" stroke-width="1.4" />
-        <line x1="261" y1="22" x2="275" y2="22" stroke="#10B981" stroke-width="1.2" />
-        <ellipse cx="268" cy="22" rx="3" ry="7" fill="none" stroke="#10B981" stroke-width="1.2" />
-        <text x="282" y="21" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Portfolyom</text>
-      </g>
+    <!-- Social Button 2: Website / Portfolio -->
+    <g class="social-icon" transform="translate(758, 460)">
+      <rect width="125" height="32" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <circle cx="18" cy="16" r="7" fill="none" stroke="#10B981" stroke-width="1.4" />
+      <line x1="11" y1="16" x2="25" y2="16" stroke="#10B981" stroke-width="1.2" />
+      <ellipse cx="18" cy="16" rx="3" ry="7" fill="none" stroke="#10B981" stroke-width="1.2" />
+      <text x="34" y="21" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Portfolyom</text>
     </g>
   </g>
 

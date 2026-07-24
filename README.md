@@ -1,10 +1,6 @@
 <div align="center">
-  <!-- Dynamic Dark / Light Animated Hero Banner -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="light.svg">
-    <img alt="Ali (Alttrest) Hero Banner" src="dark.svg" width="100%">
-  </picture>
+  <!-- Single Cohesive Desktop Application Hero Banner -->
+  <img src="./dark.svg" width="100%" alt="Ali Turan (Alttrest) Hero Banner" />
 
   <br/><br/>
 

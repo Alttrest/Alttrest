@@ -74,7 +74,6 @@
       .info-item-2 { animation: lineReveal 0.5s ease forwards 0.5s; opacity: 0; }
       .info-item-3 { animation: lineReveal 0.5s ease forwards 0.7s; opacity: 0; }
       .info-item-4 { animation: lineReveal 0.5s ease forwards 0.9s; opacity: 0; }
-      .info-item-5 { animation: lineReveal 0.5s ease forwards 1.1s; opacity: 0; }
     </style>
 
     <!-- Gradients -->
@@ -158,7 +157,7 @@
       <circle cx="2" cy="2" r="1" fill="#94A3B8" fill-opacity="0.07" />
     </pattern>
 
-    <!-- Clip Paths for Typing Animation -->
+    <!-- Clip Paths -->
     <clipPath id="leftCardClip">
       <rect x="0" y="0" width="420" height="488" rx="0" />
     </clipPath>
@@ -292,59 +291,65 @@
     </circle>
     <text x="1062" y="64" fill="#34D399" font-family="system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="0.5">AVAILABLE</text>
 
-    <!-- SECTION 1: GREETING & NAME -->
+    <!-- SECTION 1: GREETING & NAME (Fluid TSPAN flow) -->
     <g transform="translate(520, 104)">
-      <text x="0" y="24" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="500">Merhaba 👋, Ben</text>
-      <text x="135" y="25" fill="url(#titleGradientDark)" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">Ali (Alttrest)</text>
+      <text x="0" y="26" font-family="system-ui, -apple-system, sans-serif">
+        <tspan fill="#94A3B8" font-size="20" font-weight="500">Merhaba 👋, Ben </tspan>
+        <tspan fill="url(#titleGradientDark)" font-size="30" font-weight="800" letter-spacing="-0.5">Ali (Alttrest)</tspan>
+      </text>
     </g>
 
-    <!-- SECTION 2: ANIMATED TYPING SUBTITLE -->
-    <g transform="translate(520, 160)">
-      <text x="0" y="0" fill="#64748B" font-family="Consolas, monospace" font-size="14" font-weight="600">$</text>
-      <text x="16" y="0" fill="#38BDF8" font-family="Consolas, monospace" font-size="14" font-weight="600">role --current</text>
-      <text x="150" y="0" fill="#94A3B8" font-family="Consolas, monospace" font-size="14">&gt;</text>
-
-      <!-- Typing Text Loop Container using SMIL textContent -->
-      <g transform="translate(170, 0)">
-        <text x="0" y="0" fill="#22D3EE" font-family="Consolas, 'Fira Code', monospace" font-size="15" font-weight="700" letter-spacing="0.5">
-          <tspan>
-            <animate attributeName="textContent" values="AI Agent Architect;ReAct Systems Developer;Hardware &amp; IoT Engineer;Linux &amp; Hyprland Enthusiast;AI Agent Architect" dur="15s" repeatCount="indefinite" />
-          </tspan>
-        </text>
-        <text x="220" y="0" fill="#22D3EE" font-family="Consolas, monospace" font-size="15" class="cursor">█</text>
-      </g>
+    <!-- SECTION 2: ANIMATED TYPING SUBTITLE (Fluid TSPAN flow) -->
+    <g transform="translate(520, 158)">
+      <text x="0" y="0" font-family="Consolas, 'Fira Code', monospace" font-size="14">
+        <tspan fill="#64748B" font-weight="700">$ </tspan>
+        <tspan fill="#38BDF8" font-weight="700">role --current </tspan>
+        <tspan fill="#94A3B8">&gt; </tspan>
+        <tspan fill="#22D3EE" font-weight="700">
+          <animate attributeName="textContent" values="AI Agent Architect;ReAct Systems Developer;Hardware &amp; IoT Engineer;Linux &amp; Hyprland Enthusiast;AI Agent Architect" dur="15s" repeatCount="indefinite" />
+        </tspan>
+        <tspan fill="#22D3EE" class="cursor"> █</tspan>
+      </text>
     </g>
 
-    <line x1="520" y1="182" x2="1105" y2="182" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+    <line x1="520" y1="180" x2="1105" y2="180" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
 
-    <!-- SECTION 3: QUICK INFO MATRIX (Sequential Reveal) -->
-    <g transform="translate(520, 198)">
+    <!-- SECTION 3: QUICK INFO MATRIX (Fluid TSPAN flow, Clean vertical list) -->
+    <g transform="translate(520, 196)">
       <!-- Item 1: Location -->
       <g class="info-item-1" transform="translate(0, 16)">
-        <text x="0" y="0" fill="#818CF8" font-family="system-ui, sans-serif" font-size="14">📍</text>
-        <text x="24" y="-1" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">Konum:</text>
-        <text x="85" y="-1" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Türkiye 🇹🇷 / Remote</text>
+        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13">
+          <tspan fill="#818CF8">📍 </tspan>
+          <tspan fill="#94A3B8" font-weight="500">Konum: </tspan>
+          <tspan fill="#F8FAFC" font-weight="600">Türkiye 🇹🇷 / Remote</tspan>
+        </text>
       </g>
 
-      <!-- Item 2: Education / Focus -->
+      <!-- Item 2: Focus / Expertise -->
       <g class="info-item-2" transform="translate(290, 16)">
-        <text x="0" y="0" fill="#818CF8" font-family="system-ui, sans-serif" font-size="14">⚡</text>
-        <text x="24" y="-1" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">Uzmanlık:</text>
-        <text x="100" y="-1" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="600">AI Agents &amp; Hardware</text>
+        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13">
+          <tspan fill="#818CF8">⚡ </tspan>
+          <tspan fill="#94A3B8" font-weight="500">Uzmanlık: </tspan>
+          <tspan fill="#F8FAFC" font-weight="600">AI Agents &amp; Hardware</tspan>
+        </text>
       </g>
 
-      <!-- Item 3: Focus -->
+      <!-- Item 3: Current Focus -->
       <g class="info-item-3" transform="translate(0, 44)">
-        <text x="0" y="0" fill="#818CF8" font-family="system-ui, sans-serif" font-size="14">🎯</text>
-        <text x="24" y="-1" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">Şu Anki Odak:</text>
-        <text x="125" y="-1" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="600">ReAct AI Architectures &amp; Devreler</text>
+        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13">
+          <tspan fill="#818CF8">🎯 </tspan>
+          <tspan fill="#94A3B8" font-weight="500">Şu Anki Odak: </tspan>
+          <tspan fill="#F8FAFC" font-weight="600">ReAct AI Architectures &amp; Devreler</tspan>
+        </text>
       </g>
 
       <!-- Item 4: Portfolio -->
       <g class="info-item-4" transform="translate(0, 72)">
-        <text x="0" y="0" fill="#818CF8" font-family="system-ui, sans-serif" font-size="14">💼</text>
-        <text x="24" y="-1" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">Portfolyo:</text>
-        <text x="100" y="-1" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">alttre-portfolio.vercel.app</text>
+        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13">
+          <tspan fill="#818CF8">💼 </tspan>
+          <tspan fill="#94A3B8" font-weight="500">Portfolyo: </tspan>
+          <tspan fill="#38BDF8" font-weight="600">alttre-portfolio.vercel.app</tspan>
+        </text>
       </g>
     </g>
 

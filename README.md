@@ -1,4 +1,5 @@
-
 <div align="center">
-  <img src="https://github-readme-svg-ten.vercel.app/api" width="1000" height="500" alt="Ali Turan GitHub Dashboard" />
+  <a href="https://alttrest.is-a.dev">
+    <img src="https://github-readme-svg-ten.vercel.app/api?v=2" width="1000" height="650" alt="Ali Turan GitHub Dashboard" />
+  </a>
 </div>

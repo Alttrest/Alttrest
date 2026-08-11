@@ -1,1 +1,6 @@
-[![Alttre Profile Card](https://alttre.is-a.dev/api?v=12)](https://alttre.is-a.dev)
+<!-- Alttrest Profile Card - Real Contribution & Snake Edition -->
+<p align="center">
+  <a href="https://github.com/alttrest">
+    <img src="https://alttre.is-a.dev/api?username=alttrest&v=15" alt="Alttrest GitHub Card" width="100%" />
+  </a>
+</p>

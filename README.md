@@ -1,1 +1,1 @@
-,<img src="https://github-readme-svg-ten.vercel.app/api?v=8" width="1000" height="650" alt="Dashboard" />
+[![Alttre Profile Card](https://alttre.is-a.dev/api?v=12)](https://alttre.is-a.dev)

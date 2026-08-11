@@ -1,5 +1,5 @@
 <p align="center">
   <a href="https://github.com/alttrest">
-    <img src="https://alttre.is-a.dev/api?username=alttrest&v=25" alt="Alttrest GitHub Card" width="100%" />
+    <img src="https://alttre.is-a.dev/api?username=alttrest&v=26" alt="Alttrest GitHub Card" width="100%" />
   </a>
 </p>

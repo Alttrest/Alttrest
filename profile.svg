@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+    }
+    @keyframes scan {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(180px); opacity: 0; }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .grid-bg { fill: url(#grid); }
+    .pulse-elem { animation: pulse 2.5s ease-in-out infinite; }
+  </style>
+
+  <rect width="1200" height="560" rx="16" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect width="1200" height="560" rx="16" class="grid-bg" />
+
+  <!-- Top Badge -->
+  <g transform="translate(60, 45)">
+    <rect width="200" height="26" rx="13" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="15" cy="13" r="4" fill="#38bdf8" />
+    <text x="28" y="17" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="700">ENGINEERING ECOSYSTEM</text>
+  </g>
+
+  <!-- Left Column: Project Identity & Specs -->
+  <g transform="translate(60, 115)">
+    <text x="0" y="38" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="40" font-weight="800" letter-spacing="-1">Ali Turan (Alttrest)</text>
+    <text x="0" y="74" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">Master Developer Ecosystem: AI Agents, Spatial WebXR &amp; Hardware Robotics</text>
+
+    <!-- Stack Chips -->
+    <g transform="translate(0, 100)">
+      
+        <rect x="0" y="0" width="114" height="30" rx="6" fill="#0f172a" stroke="#1e293b"/>
+        <text x="57" y="19" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="600">TypeScript</text>
+        
+        <rect x="126" y="0" width="78" height="30" rx="6" fill="#0f172a" stroke="#1e293b"/>
+        <text x="165" y="19" text-anchor="middle" fill="#a855f7" font-family="monospace" font-size="12" font-weight="600">Python</text>
+        
+        <rect x="216" y="0" width="114" height="30" rx="6" fill="#0f172a" stroke="#1e293b"/>
+        <text x="273" y="19" text-anchor="middle" fill="#10b981" font-family="monospace" font-size="12" font-weight="600">Embedded C</text>
+        
+        <rect x="342" y="0" width="96" height="30" rx="6" fill="#0f172a" stroke="#1e293b"/>
+        <text x="390" y="19" text-anchor="middle" fill="#f59e0b" font-family="monospace" font-size="12" font-weight="600">Three.js</text>
+        
+    </g>
+
+    <!-- Metrics Cards -->
+    <g transform="translate(0, 160)">
+      
+        <g transform="translate(0, 0)">
+          <rect width="145" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+          <text x="14" y="24" fill="#64748b" font-family="monospace" font-size="10">PROJECTS</text>
+          <text x="14" y="48" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">37+ Production</text>
+        </g>
+        
+        <g transform="translate(155, 0)">
+          <rect width="145" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+          <text x="14" y="24" fill="#64748b" font-family="monospace" font-size="10">DOMAINS</text>
+          <text x="14" y="48" fill="#a855f7" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">AI / 3D / Robotics</text>
+        </g>
+        
+        <g transform="translate(310, 0)">
+          <rect width="145" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+          <text x="14" y="24" fill="#64748b" font-family="monospace" font-size="10">ARCHITECTURE</text>
+          <text x="14" y="48" fill="#10b981" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">Full-Stack + Edge</text>
+        </g>
+        
+    </g>
+
+    <!-- Detailed Highlights -->
+    <g transform="translate(0, 255)">
+      <text x="0" y="0" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="700">CORE SYSTEM ARCHITECTURE:</text>
+      
+        <text x="0" y="22" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="12">● Pioneering autonomous AI operator companions &amp; local tool...</text>
+        
+        <text x="0" y="42" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="12">● WebXR spatial computing and high-velocity fluid particle ...</text>
+        
+        <text x="0" y="62" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="12">● Autonomous physical robotics with embedded C firmware &amp; C...</text>
+        
+    </g>
+  </g>
+
+  <!-- Right Column: Bespoke Visual Representation -->
+  <g transform="translate(680, 50)">
+    
+        <g transform="translate(40, 20)">
+          <!-- Core Central Nexus -->
+          <circle cx="190" cy="150" r="50" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5"/>
+          <circle cx="190" cy="150" r="20" fill="#38bdf8" opacity="0.3" class="pulse-elem"/>
+          <circle cx="190" cy="150" r="8" fill="#38bdf8"/>
+          <text x="190" y="215" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="12" font-weight="800">ALTTRE CORE</text>
+
+          <!-- 4 Core Domain Pillars -->
+          <!-- Pillar 1: AI Agents -->
+          <g transform="translate(190, 35)">
+            <line x1="0" y1="65" x2="0" y2="15" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <rect x="-65" y="-15" width="130" height="30" rx="6" fill="#0f172a" stroke="#38bdf8"/>
+            <text x="0" y="4" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="700">AI AGENTS &amp; MCP</text>
+          </g>
+
+          <!-- Pillar 2: 3D Spatial -->
+          <g transform="translate(50, 150)">
+            <line x1="90" y1="0" x2="35" y2="0" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <rect x="-35" y="-15" width="120" height="30" rx="6" fill="#0f172a" stroke="#a855f7"/>
+            <text x="25" y="4" text-anchor="middle" fill="#c084fc" font-family="monospace" font-size="10" font-weight="700">3D &amp; SPATIAL AR</text>
+          </g>
+
+          <!-- Pillar 3: Robotics & Hardware -->
+          <g transform="translate(330, 150)">
+            <line x1="-90" y1="0" x2="-35" y2="0" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <rect x="-35" y="-15" width="125" height="30" rx="6" fill="#0f172a" stroke="#10b981"/>
+            <text x="27" y="4" text-anchor="middle" fill="#34d399" font-family="monospace" font-size="10" font-weight="700">ROBOTICS &amp; C</text>
+          </g>
+
+          <!-- Pillar 4: Media & OSINT -->
+          <g transform="translate(190, 265)">
+            <line x1="0" y1="-65" x2="0" y2="-15" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <rect x="-65" y="-15" width="130" height="30" rx="6" fill="#0f172a" stroke="#f59e0b"/>
+            <text x="0" y="4" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="10" font-weight="700">MEDIA &amp; OSINT</text>
+          </g>
+        </g>
+        
+  </g>
+
+  <!-- Bottom Bar -->
+  <g transform="translate(60, 515)">
+    <line x1="0" y1="0" x2="1080" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="22" fill="#64748b" font-family="monospace" font-size="11">REPOSITORY: Alttrest/Ali Turan (Alttrest)</text>
+    <text x="400" y="22" fill="#64748b" font-family="monospace" font-size="11">MAINTAINER: Ali Turan (@Alttrest)</text>
+    <text x="960" y="22" fill="#38bdf8" font-family="monospace" font-size="11">● PRODUCTION VERIFIED</text>
+  </g>
+</svg>

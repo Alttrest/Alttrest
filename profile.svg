@@ -39,7 +39,7 @@
 
   <!-- Left Column: Project Identity & Specs -->
   <g transform="translate(60, 115)">
-    <text x="0" y="38" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="40" font-weight="800" letter-spacing="-1">Ali Turan (Alttrest)</text>
+    <text x="0" y="38" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="40" font-weight="800" letter-spacing="-1">Ali Turan (Alttre)</text>
     <text x="0" y="74" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">Master Developer Ecosystem: AI Agents, Spatial WebXR &amp; Hardware Robotics</text>
 
     <!-- Stack Chips -->

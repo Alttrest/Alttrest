@@ -90,31 +90,26 @@ An interactive web experience featuring scroll-driven animation and dynamic tran
 | [Ven-s-Finder](https://github.com/Alttrest/Ven-s-Finder) | JavaScript | 2 |
 | [web-os](https://github.com/Alttrest/web-os) | JavaScript | 1 |
 
-## GitHub overview
+## GitHub, at a glance
 
-**8 followers · 22 stars across 15 public repositories**  
-*Repository totals checked against GitHub on 26 October 2026.*
+<table>
+  <tr>
+    <td align="center"><strong>8</strong><br><sub>FOLLOWERS</sub></td>
+    <td align="center"><strong>22</strong><br><sub>STARS EARNED</sub></td>
+    <td align="center"><strong>15</strong><br><sub>PUBLIC REPOSITORIES</sub></td>
+  </tr>
+</table>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=alttrest&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="GitHub statistics for Alttrest" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alttrest&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages" height="180" />
-</div>
+*Counts checked against GitHub on 26 October 2026.*
 
-## Contribution graph
+### Contribution activity
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=alttrest&theme=tokyo-night&hide_border=true&area=true" alt="GitHub contribution activity graph" width="100%" />
-</div>
+See my live contribution calendar and activity on [my GitHub profile](https://github.com/Alttrest).
 
-## Contribution activity
+### Explore my work
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=light">
-    <img src="https://www.gitskins.com/api/section/heatmap?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=dark" alt="GitHub contributions over the past year" width="100%" />
-  </picture>
-</div>
-
+- [All repositories](https://github.com/Alttrest?tab=repositories)
+- [Most starred projects](https://github.com/Alttrest?tab=repositories&q=&sort=stargazers)
 ## Let’s build something
 
 I’m open to thoughtful collaboration, ambitious products, and useful open-source work.
@@ -122,3 +117,4 @@ I’m open to thoughtful collaboration, ambitious products, and useful open-sour
 [Visit my GitHub profile](https://github.com/alttrest) · [Visit my website](https://alttre.is-a.dev/)
 
 <sub>Profile visuals by <a href="https://www.gitskins.com/readme-generator">GitSkins</a>.</sub>
+

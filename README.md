@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.gitskins.com/api/section/hero?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=dark" alt="Ali TURAN profile banner" width="100%" />
+  <img src="./assets/profile-banner.svg" alt="Ali TURAN profile banner" width="100%" />
 
   # Ali TURAN
 
@@ -24,7 +24,7 @@
 ## What I’m building
 
 <div align="center">
-  <img src="https://www.gitskins.com/api/section/highlights?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&items=JavaScript%3A%3A15%20public%20repositories%7CNexusAI-PhoneAgent%3A%3AAn%20open-source%20AI%20companion%20for%20mobile%20devices%7CImpact%3A%3A22%20stars%20%C2%B7%208%20followers" alt="Current projects and profile highlights" width="100%" />
+  <img src="./assets/project-highlights.svg" alt="Current projects and profile highlights" width="100%" />
 </div>
 
 ## Skills and technologies
@@ -51,7 +51,7 @@
 ### Language distribution
 
 <div align="center">
-  <img src="https://www.gitskins.com/api/section/stack?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4" alt="Repository-weighted language distribution" width="100%" />
+  <img src="./assets/language-stack.svg" alt="Technology stack" width="100%" />
 </div>
 
 ### Areas I work in
@@ -117,10 +117,7 @@ An interactive web experience featuring scroll-driven animation and dynamic tran
 ### Contribution activity
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=light">
-    <img src="https://www.gitskins.com/api/section/heatmap?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=dark" alt="Ali TURAN GitHub contribution map" width="100%" />
-  </picture>
+  <img src="./assets/contribution-map.svg" alt="Ali TURAN GitHub contribution map" width="100%" />
 </div>
 ### Explore my work
 
@@ -133,4 +130,3 @@ I’m open to thoughtful collaboration, ambitious products, and useful open-sour
 
 [GitHub](https://github.com/alttrest) · [Website](https://alttre.is-a.dev/)
 
-<sub>Profile visuals by <a href="https://www.gitskins.com/readme-generator">GitSkins</a>.</sub>

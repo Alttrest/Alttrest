@@ -21,6 +21,12 @@
 - I enjoy turning ambitious ideas into usable projects and sharing them in public.
 - **Current focus:** JavaScript, TypeScript, CSS, and AI-powered applications.
 
+## What I’m building
+
+<div align="center">
+  <img src="https://www.gitskins.com/api/section/highlights?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&items=JavaScript%3A%3A15%20public%20repositories%7CNexusAI-PhoneAgent%3A%3AAn%20open-source%20AI%20companion%20for%20mobile%20devices%7CImpact%3A%3A22%20stars%20%C2%B7%208%20followers" alt="Current projects and profile highlights" width="100%" />
+</div>
+
 ## Skills and technologies
 
 ### Languages
@@ -41,6 +47,12 @@
 ![Electron](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=electron&logoColor=fff)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=fff)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=fff)
+
+### Language distribution
+
+<div align="center">
+  <img src="https://www.gitskins.com/api/section/stack?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4" alt="Repository-weighted language distribution" width="100%" />
+</div>
 
 ### Areas I work in
 
@@ -121,4 +133,4 @@ I’m open to thoughtful collaboration, ambitious products, and useful open-sour
 
 [GitHub](https://github.com/alttrest) · [Website](https://alttre.is-a.dev/)
 
-
+<sub>Profile visuals by <a href="https://www.gitskins.com/readme-generator">GitSkins</a>.</sub>

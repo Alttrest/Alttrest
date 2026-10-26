@@ -121,4 +121,4 @@ I’m open to thoughtful collaboration, ambitious products, and useful open-sour
 
 [GitHub](https://github.com/alttrest) · [Website](https://alttre.is-a.dev/)
 
-<sub>Profile visuals by <a href="https://www.gitskins.com/readme-generator">GitSkins</a>.</sub>
+

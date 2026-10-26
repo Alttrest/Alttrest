@@ -105,10 +105,11 @@ An interactive web experience featuring scroll-driven animation and dynamic tran
 ### Contribution activity
 
 <div align="center">
-  <img src="https://ghchart.rshah.org/409ba5/Alttrest" alt="Alttrest GitHub contribution map" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=light">
+    <img src="https://www.gitskins.com/api/section/heatmap?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=dark" alt="Ali TURAN GitHub contribution map" width="100%" />
+  </picture>
 </div>
-
-[Open the live contribution calendar on GitHub](https://github.com/Alttrest).
 ### Explore my work
 
 - [All repositories](https://github.com/Alttrest?tab=repositories)

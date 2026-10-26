@@ -104,8 +104,11 @@ An interactive web experience featuring scroll-driven animation and dynamic tran
 
 ### Contribution activity
 
-GitHub’s live contribution calendar is available on [my profile](https://github.com/Alttrest).
+<div align="center">
+  <img src="https://ghchart.rshah.org/409ba5/Alttrest" alt="Alttrest GitHub contribution map" width="100%" />
+</div>
 
+[Open the live contribution calendar on GitHub](https://github.com/Alttrest).
 ### Explore my work
 
 - [All repositories](https://github.com/Alttrest?tab=repositories)

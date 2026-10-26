@@ -1,45 +1,4 @@
-<div align="center"><div align="center">
-  <img src="https://www.gitskins.com/api/section/hero?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=dark" alt="Ali TURAN profile" width="100%" />
-
-  # Ali TURAN
-
-  **Frontend or full-stack engineer**
-
-  High school student and developer focused on robotics (Arduino/C++), AI agents, real-time web apps (Python), and games.
-
-  [GitHub](https://github.com/alttrest) · [Website](https://alttre.is-a.dev/)
-
-  ![Followers](https://img.shields.io/github/followers/alttrest?style=flat&label=Followers)
-  ![Total stars](https://img.shields.io/badge/Total%20stars-22-yellow?style=flat)
-  ![Public repositories](https://img.shields.io/badge/Public%20repositories-15-informational?style=flat)
-</div>
-
-## About
-
-- Based in Antalya/Alanya
-- Interested in robotics, AI agents, real-time web applications, and game development
-- Current focus: JavaScript, TypeScript, and CSS
-
-## Building in public
-
-Alttre (Ali Turan) is a high school student and developer working across robotics, AI, web apps, and games.
-
-<img src="https://www.gitskins.com/api/section/portrait?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&color=1&v=showcase-portrait-1" alt="Ali TURAN animated ASCII portrait" width="100%" />
-
-## What I’m shipping
-
-<img src="https://www.gitskins.com/api/section/highlights?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&items=JavaScript%3A%3A15%20public%20repositories%7CNexusAI-PhoneAgent%3A%3AAn%20open-source%2C%20modern%20agentic%20AI%20companion%20fo%7CImpact%3A%3A22%20stars%20%C2%B7%2085%20active%20days" alt="Profile highlights" width="100%" />
-
-## Featured work
-
-### [NexusAI-PhoneAgent](https://github.com/Alttrest/NexusAI-PhoneAgent)
-
-An open-source, modern agentic AI companion for mobile devices featuring visual lens parsing, speech synthesis, and deep local tool integrations.
-
-**TypeScript** · [View project](https://github.com/Alttrest/NexusAI-PhoneAgent)
-
-## Selected projects
-
+<div align="center">
   <img src="https://www.gitskins.com/api/section/hero?username=alttrest&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F252331736%3Fu%3D32d671a7021efd6c1c4e4ea6c4f7622709276074%26v%3D4&mode=dark" alt="Ali TURAN profile banner" width="100%" />
 
   # Ali TURAN
@@ -57,7 +16,7 @@ An open-source, modern agentic AI companion for mobile devices featuring visual 
 
 ## About me
 
-- I’m a student developer interested in practical software, hardware, and creative technology.
+- Student developer interested in practical software, hardware, and creative technology.
 - I work on AI agents, real-time web apps, robotics with Arduino/C++, and games.
 - I enjoy turning ambitious ideas into usable projects and sharing them in public.
 - **Current focus:** JavaScript, TypeScript, CSS, and AI-powered applications.
@@ -94,13 +53,13 @@ An open-source, modern agentic AI companion for mobile devices featuring visual 
 ## Featured projects
 
 ### [NexusAI-PhoneAgent](https://github.com/Alttrest/NexusAI-PhoneAgent)
-An open-source agentic AI companion for mobile devices, built with React Native and Expo. It explores visual input, speech synthesis, and local tool integrations.
+An open-source AI companion for mobile devices, built with React Native and Expo. It explores visual input, speech synthesis, and local tool integrations.
 
 ### [NexusAI-Agent](https://github.com/Alttrest/NexusAI-Agent)
 A local AI system operator with an Electron interface, built with React and Tailwind CSS.
 
 ### [AlttreVision](https://github.com/Alttrest/AlttreVision)
-An immersive AR/3D web tool for previewing furniture and planning room layouts.
+An AR/3D web tool for previewing furniture and planning room layouts.
 
 ### [Hype-NEWS](https://github.com/Alttrest/Hype-NEWS)
 An AI-assisted, interactive news experience designed as a modern digital newsroom.
@@ -131,7 +90,7 @@ An interactive web experience featuring scroll-driven animation and dynamic tran
 | [Ven-s-Finder](https://github.com/Alttrest/Ven-s-Finder) | JavaScript | 2 |
 | [web-os](https://github.com/Alttrest/web-os) | JavaScript | 1 |
 
-## GitHub, at a glance
+## GitHub at a glance
 
 <table>
   <tr>
@@ -145,17 +104,17 @@ An interactive web experience featuring scroll-driven animation and dynamic tran
 
 ### Contribution activity
 
-See my live contribution calendar and activity on [my GitHub profile](https://github.com/Alttrest).
+GitHub’s live contribution calendar is available on [my profile](https://github.com/Alttrest).
 
 ### Explore my work
 
 - [All repositories](https://github.com/Alttrest?tab=repositories)
-- [Most starred projects](https://github.com/Alttrest?tab=repositories&q=&sort=stargazers)
+- [Most-starred repositories](https://github.com/Alttrest?tab=repositories&q=&sort=stargazers)
+
 ## Let’s build something
 
 I’m open to thoughtful collaboration, ambitious products, and useful open-source work.
 
-[Visit my GitHub profile](https://github.com/alttrest) · [Visit my website](https://alttre.is-a.dev/)
+[GitHub](https://github.com/alttrest) · [Website](https://alttre.is-a.dev/)
 
 <sub>Profile visuals by <a href="https://www.gitskins.com/readme-generator">GitSkins</a>.</sub>
-
